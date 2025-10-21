@@ -1,52 +1,73 @@
 <!DOCTYPE html>
+<!-- Added dark class for Tailwind Dark Mode -->
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-                <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- =================================================================== -->
+    <!-- ======================= PERFORMANCE HINTS ========================= -->
+    <!-- =================================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
     <link rel="dns-prefetch" href="https://unpkg.com">
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <!-- Preload the main font stylesheet for faster rendering -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-                
+    <!-- =================================================================== -->
+    <!-- ========================= ENHANCED SEO ============================ -->
+    <!-- =================================================================== -->
+    
     <title>All-In-One Free Tools - Your Ultimate Online Toolkit</title>
     <meta name="description" content="Discover a comprehensive collection of 40+ free, powerful, and privacy-focused online tools. From calculators and converters to text utilities and web development aids, get everything you need in one place.">
     <meta name="keywords" content="free tools, online tools, web tools, calculator, converter, text tools, developer tools, free utilities, modern toolkit, seo tools, productivity apps, password generator, bmi calculator, qr code generator, online utilities">
     <meta name="author" content="ToolVerse">
     <meta name="generator" content="Hand-coded with love">
 
-        <meta name="google-site-verification" content="YOUR_GSC_VERIFICATION_CODE_HERE" />
+    <!-- Placeholder for Google Search Console verification -->
+    <meta name="google-site-verification" content="YOUR_GSC_VERIFICATION_CODE_HERE" />
     
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://your-domain.com" />
 
-        <meta property="og:type" content="website">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
     <meta property="og:url" content="https://your-domain.com/">
     <meta property="og:title" content="All-In-One Free Tools - Your Ultimate Online Toolkit">
     <meta property="og:description" content="A curated collection of over 40 free, modern, and easy-to-use online tools for everyday tasks and development needs.">
     <meta property="og:image" content="https://placehold.co/1200x630/1e293b/ffffff?text=ToolVerse:+Free+Online+Tools">
     <meta property="og:site_name" content="ToolVerse">
 
-        <meta property="twitter:card" content="summary_large_image">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://your-domain.com/">
     <meta property="twitter:title" content="All-In-One Free Tools - Your Ultimate Online Toolkit">
     <meta property="twitter:description" content="A curated collection of over 40 free, modern, and easy-to-use online tools for everyday tasks and development needs.">
     <meta property="twitter:image" content="https://placehold.co/1200x630/1e293b/ffffff?text=ToolVerse:+Free+Online+Tools">
     
-        <meta name="theme-color" content="#3b82f6">     <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">         <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Browser/UI Hinting -->
+    <meta name="theme-color" content="#3b82f6"> <!-- Light mode -->
+    <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)"> <!-- Dark mode -->
+
+    <!-- PWA / Add to Home Screen Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="ToolVerse">
     <link rel="apple-touch-icon" href="https://placehold.co/180x180/1e293b/ffffff?text=TV">
 
-        <meta name="msapplication-TileColor" content="#1e293b">
+    <!-- Microsoft Tile Meta Tags -->
+    <meta name="msapplication-TileColor" content="#1e293b">
     <meta name="msapplication-TileImage" content="https://placehold.co/270x270/1e293b/ffffff?text=TV">
 
-        <link rel="icon" href="https://placehold.co/32x32/1e293b/ffffff?text=T" type="image/png">
+    <!-- Favicon -->
+    <link rel="icon" href="https://placehold.co/32x32/1e293b/ffffff?text=T" type="image/png">
     
-                <script type="application/ld+json">
+    <!-- =================================================================== -->
+    <!-- =================== STRUCTURED DATA (SCHEMA.ORG) ================== -->
+    <!-- =================================================================== -->
+    <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
@@ -101,15 +122,18 @@
     }
     </script>
 
-        <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+    <!-- Google Fonts (Loaded via preload link) -->
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
 
-        <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     
     <script>
       tailwind.config = { darkMode: 'class' }
     </script>
     
-        <script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.js" defer></script>
+    <!-- Libraries (DEFERRED for performance) -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.js" defer></script>
     <script src="https://unpkg.com/lucide@latest" defer></script>
 
     <style>
@@ -134,15 +158,6 @@
         .faq-question summary::-webkit-details-marker { display: none; }
         .faq-question summary { list-style: none; }
     </style>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQYBYBGBEE"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-ZQYBYBGBEE');
-    </script>
 </head>
 <body class="antialiased bg-transparent text-slate-700 dark:text-slate-300 transition-colors duration-300">
 
@@ -230,12 +245,13 @@
             </div>
         </section>
 
-                <section id="faq" class="py-16">
+        <!-- FAQ Section -->
+        <section id="faq" class="py-16">
             <div class="max-w-3xl mx-auto" data-animate>
                 <div class="text-center mb-12">
                     <h2 class="text-3xl font-bold text-center text-slate-800 dark:text-slate-100">Frequently Asked Questions</h2>
                     <p class="text-slate-600 dark:text-slate-400 mt-2">Your questions, answered.</p>
-        T        </div>
+                </div>
                 <div class="space-y-4">
                     <details class="faq-question bg-white/50 dark:bg-slate-800/50 backdrop-blur-md p-6 rounded-lg group" open>
                         <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center text-slate-800 dark:text-slate-100">
@@ -250,9 +266,9 @@
                             <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
                         </summary>
                         <p class="mt-4 text-slate-600 dark:text-slate-400">Your privacy is our top priority. ToolVerse is a static website, which means all calculations and data processing for our internal tools happen directly in your browser. No data is ever sent to or stored on our servers. We do not use tracking cookies or ads.</p>
-e                 </details>
+                    </details>
                     <details class="faq-question bg-white/50 dark:bg-slate-800/50 backdrop-blur-md p-6 rounded-lg group">
-s                       <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center text-slate-800 dark:text-slate-100">
+                        <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center text-slate-800 dark:text-slate-100">
                             Do I need to install any software or plugins?
                             <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
                         </summary>
@@ -262,14 +278,14 @@ s                       <summary class="font-semibold text-lg cursor-
             </div>
         </section>
 
-Read       <section id="stats" class="py-16" data-animate>
+        <section id="stats" class="py-16" data-animate>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div><h3 class="text-5xl font-extrabold text-blue-500" data-counter="40">+</h3><p class="mt-2 text-lg text-slate-600 dark:text-slate-400">Powerful Tools</p></div>
                 <div><h3 class="text-5xl font-extrabold text-blue-500" data-counter="10">+</h3><p class="mt-2 text-lg text-slate-600 dark:text-slate-400">Unique Categories</p></div>
                 <div><h3 class="text-5xl font-extrabold text-blue-500" data-counter="100">%</h3><p class="mt-2 text-lg text-slate-600 dark:text-slate-400">Completely Free</p></div>
             </div>
         </section>
-aloud
+
         <section id="fun-fact" class="py-16" data-animate>
              <div class="bg-white/50 dark:bg-slate-800/50 backdrop-blur-md p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700 text-center max-w-3xl mx-auto">
                  <h3 class="text-2xl font-bold text-slate-800 dark:text-slate-100 mb-4">Did You Know?</h3>
@@ -281,11 +297,11 @@ aloud
     <footer id="contact" class="bg-slate-800 text-gray-300 pt-16 pb-8 dark:bg-slate-900/80 backdrop-blur-sm relative z-10">
         <div class="container mx-auto px-6">
              <div class="text-center mb-12"><h2 class="text-3xl font-bold text-white">Contact Us</h2><p class="text-slate-400 mt-2">Have a question or a suggestion for a new tool? Reach out!</p></div>
-D             <div class="flex justify-center items-center space-x-8 text-center mb-12">
+             <div class="flex justify-center items-center space-x-8 text-center mb-12">
                  <a href="mailto:kangali009kang@gmail.com" class="text-slate-300 hover:text-blue-500 transition-colors" aria-label="Email Us"><i data-lucide="mail" class="w-10 h-10 mx-auto mb-2"></i><p>Email Us</p></a>
                  <a href="#" class="text-slate-300 hover:text-blue-500 transition-colors" aria-label="Follow us on Twitter"><i data-lucide="twitter" class="w-10 h-10 mx-auto mb-2"></i><p>Twitter</p></a>
                  <a href="#" class="text-slate-300 hover:text-blue-500 transition-colors" aria-label="Check our GitHub"><i data-lucide="github" class="w-10 h-10 mx-auto mb-2"></i><p>GitHub</p></a>
-ci             </div>
+             </div>
             <div class="mt-12 border-t border-gray-700 pt-8 text-center"><p class="text-gray-500">&copy; All Rights Reserved. Built with ❤️ for the open web.</p></div>
         </div>
     </footer>
@@ -296,13 +312,13 @@ ci             </div>
             { id: 'bmi', title: 'BMI Calculator', category: 'Health', description: 'Calculate your Body Mass Index.', icon: 'heart-pulse', type: 'internal', isFeatured: true },
             { id: 'password', title: 'Password Generator', category: 'Security', description: 'Create strong, random passwords.', icon: 'lock', type: 'internal', isFeatured: true },
             { id: 'qrcode', title: 'QR Code Generator', category: 'Utility', description: 'Create QR codes for URLs and text.', icon: 'qr-code', type: 'internal', isFeatured: true },
-Read             { id: 'wordcounter', title: 'Word & Character Counter', category: 'Text', description: 'Count words and characters in text.', icon: 'binary', type: 'internal' },
+            { id: 'wordcounter', title: 'Word & Character Counter', category: 'Text', description: 'Count words and characters in text.', icon: 'binary', type: 'internal' },
             { id: 'age', title: 'Age Calculator', category: 'Health', description: 'Calculate age from date of birth.', icon: 'cake', type: 'internal' },
             { id: 'lorem', title: 'Lorem Ipsum Generator', category: 'Text', description: 'Generate placeholder text.', icon: 'pilcrow', type: 'internal' },
             { id: 'gradient', title: 'Gradient Generator', category: 'Design', description: 'Create CSS color gradients.', icon: 'palette', type: 'internal', isFeatured: true },
             { id: 'aspectratio', title: 'Aspect Ratio Calculator', category: 'Image', description: 'Calculate aspect ratios for images and videos.', icon: 'aspect-ratio', type: 'internal' },
             { id: 'ip', title: 'What Is My IP', category: 'Developer', description: 'Find your public IP address.', icon: 'globe', type: 'internal' },
-S           { id: 'namepicker', title: 'Random Name Picker', category: 'Utility', description: 'Pick a random name from a list.', icon: 'dices', type: 'internal' },
+            { id: 'namepicker', title: 'Random Name Picker', category: 'Utility', description: 'Pick a random name from a list.', icon: 'dices', type: 'internal' },
             { id: 'unit', title: 'Unit Converter', category: 'Converter', description: 'Convert between various units of measurement.', icon: 'refresh-cw', type: 'internal' },
             { id: 'pomodoro', title: 'Pomodoro Timer', category: 'Productivity', description: 'A timer to boost your productivity.', icon: 'timer', type: 'internal' },
             { id: 'base64', title: 'Base64 Encoder/Decoder', category: 'Developer', description: 'Encode and decode Base64 strings.', icon: 'shield-lock', type: 'internal' },
@@ -311,7 +327,7 @@ S           { id: 'namepicker', title: 'Random Name Picker', category: 'Uti
             { id: 'imagecompress', title: 'Image Compressor', category: 'Image', description: 'Reduce the file size of your images.', url: 'https://tiny-img.com/image-compressor/', icon: 'image-down', type: 'external', isFeatured: true },
             { id: 'markdown', title: 'Markdown Editor', category: 'Text', description: 'A simple online Markdown editor.', url: 'https://stackedit.io/', icon: 'file-text', type: 'external' },
             { id: 'worldclock', title: 'World Clock', category: 'Utility', description: 'Check the time in different time zones.', url: 'https://www.timeanddate.com/worldclock/', icon: 'clock', type: 'external' },
-            { id: 'codepen', title: 'Code Playground', category: 'Developer', description: 'Test HTML, CSS, and JS code online.', url: 'httpshttps://codepen.io/pen/', icon: 'code', type: 'external' },
+            { id: 'codepen', title: 'Code Playground', category: 'Developer', description: 'Test HTML, CSS, and JS code online.', url: 'https://codepen.io/pen/', icon: 'code', type: 'external' },
             { id: 'currency', title: 'Currency Converter', category: 'Converter', description: 'Live exchange rates for currencies.', url: 'https://www.xe.com/currencyconverter/', icon: 'dollar-sign', type: 'external' },
             { id: 'regex', title: 'Regex Tester', category: 'Developer', description: 'Test and debug regular expressions.', url: 'https://regex101.com/', icon: 'microscope', type: 'external' },
             { id: 'fileconvert', title: 'File Converter', category: 'Converter', description: 'Convert documents, images, and videos.', url: 'https://www.freeconvert.com/', icon: 'file-cog', type: 'external' },
@@ -333,11 +349,11 @@ S           { id: 'namepicker', title: 'Random Name Picker', category: 'Uti
                 toolViewerWrapper: document.getElementById('tool-viewer-wrapper'),
                 toolViewerTitle: document.getElementById('tool-viewer-title'),
                 toolViewerContent: document.getElementById('tool-viewer-content'),
-  A               closeToolViewerBtn: document.getElementById('close-tool-viewer'),
+                closeToolViewerBtn: document.getElementById('close-tool-viewer'),
                 mobileMenuButton: document.getElementById('mobile-menu-button'),
                 mobileMenu: document.getElementById('mobile-menu'),
                 darkModeToggle: document.getElementById('dark-mode-toggle'),
-S               factText: document.getElementById('fact-text'),
+                factText: document.getElementById('fact-text'),
                 categoryFilters: document.getElementById('category-filters'),
             };
 
@@ -345,7 +361,7 @@ S               factText: document.getElementById('fact-text'),
             this.elements.searchInput.addEventListener('input', debouncedSearch);
 
             this.elements.closeToolViewerBtn.addEventListener('click', this.closeToolViewer.bind(this));
-s           this.elements.mobileMenuButton.addEventListener('click', () => this.elements.mobileMenu.classList.toggle('hidden'));
+            this.elements.mobileMenuButton.addEventListener('click', () => this.elements.mobileMenu.classList.toggle('hidden'));
             this.elements.darkModeToggle.addEventListener('click', this.toggleDarkMode.bind(this));
             window.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape' && !this.elements.toolViewerWrapper.classList.contains('hidden')) {
@@ -353,10 +369,10 @@ s           this.elements.mobileMenuButton.addEventListener('click', () => 
                 }
             });
             this.loadDarkMode();
-This is a test to see if you can read this.          this.renderFeaturedTools();
+            this.renderFeaturedTools();
             this.renderCategoryFilters();
             this.renderTools(this.toolsData, this.elements.toolGrid);
-This is a test to see if you can read this.          this.displayFunFact();
+            this.displayFunFact();
             this.setupScrollAnimations();
             this.helpers.renderIcons();
         },
@@ -388,7 +404,7 @@ This is a test to see if you can read this.          this.displayFunFact();
                     const category = e.target.dataset.category;
                     this.filterToolsByCategory(category);
                     this.elements.categoryFilters.querySelectorAll('button').forEach(btn => { btn.classList.remove('bg-blue-500', 'text-white'); btn.classList.add('bg-gray-200', 'dark:bg-slate-700', 'text-slate-700', 'dark:text-slate-300', 'hover:bg-gray-300', 'dark:hover:bg-slate-600'); });
-e                   e.target.classList.add('bg-blue-500', 'text-white');
+                    e.target.classList.add('bg-blue-500', 'text-white');
                     e.target.classList.remove('bg-gray-200', 'dark:bg-slate-700', 'text-slate-700', 'dark:text-slate-300', 'hover:bg-gray-300', 'dark:hover:bg-slate-600');
                 }
             });
@@ -418,7 +434,7 @@ e                   e.target.classList.add('bg-blue-500', 'text-white')
         },
         loadDarkMode: function() { if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) { document.documentElement.classList.add('dark'); } else { document.documentElement.classList.remove('dark'); } },
         toggleDarkMode: function() { document.documentElement.classList.toggle('dark'); localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light'; },
-  ci       displayFunFact: function() { const randomIndex = Math.floor(Math.random() * this.funFacts.length); this.elements.factText.textContent = this.funFacts[randomIndex]; },
+        displayFunFact: function() { const randomIndex = Math.floor(Math.random() * this.funFacts.length); this.elements.factText.textContent = this.funFacts[randomIndex]; },
         setupScrollAnimations: function() { const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('in-view'); if (entry.target.id === 'stats') { this.animateCounters(); observer.unobserve(entry.target); } } }); }, { threshold: 0.1 }); document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el)); },
         animateCounters: function() { document.querySelectorAll('[data-counter]').forEach(counter => { const target = +counter.getAttribute('data-counter'); const suffix = counter.innerText; counter.innerText = '0'; let current = 0; const updateCounter = () => { const increment = target / 100; current += increment; if (current < target) { counter.innerText = Math.ceil(current) + suffix; requestAnimationFrame(updateCounter); } else { counter.innerText = target + suffix; } }; requestAnimationFrame(updateCounter); }); },
         helpers: {
@@ -435,10 +451,10 @@ e                   e.target.classList.add('bg-blue-500', 'text-white')
             getLoremIpsumGenerator: function() { const html = `<div class="space-y-4 max-w-lg mx-auto"><div><label class="${App.css.label}">Number of Paragraphs</label><input type="number" id="lorem-paragraphs" class="${App.css.input}" value="3" min="1" max="50"></div><button id="lorem-generate" class="${App.css.button}">Generate Text</button><div class="relative"><textarea id="lorem-result" class="${App.css.inputReadonly} min-h-[200px] mt-4" readonly></textarea><button id="lorem-copy" class="absolute top-6 right-2 text-gray-500 hover:text-blue-500 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-slate-700 transition"><i data-lucide="clipboard" class="w-5 h-5"></i></button></div></div>`; const logic = () => { const loremText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."; const resultEl = document.getElementById('lorem-result'); const copyBtn = document.getElementById('lorem-copy'); const generate = () => { const paragraphs = document.getElementById('lorem-paragraphs').value; let result = ''; for (let i = 0; i < paragraphs; i++) { result += loremText + '\n\n'; } resultEl.value = result.trim(); }; document.getElementById('lorem-generate').addEventListener('click', generate); copyBtn.addEventListener('click', () => { if (resultEl.value) App.helpers.copyToClipboard(resultEl.value, copyBtn); }); generate(); }; return { html, logic }; },
             getGradientGenerator: function() { const html = `<div class="space-y-6"><div id="grad-preview" class="w-full h-48 rounded-lg border-4 border-white shadow-inner dark:border-slate-700"></div><div class="grid grid-cols-1 md:grid-cols-2 gap-4"><div><label class="${App.css.label}">Color 1</label><input type="color" id="grad-color1" class="${App.css.input} h-12 p-1" value="#3b82f6"></div><div><label class="${App.css.label}">Color 2</label><input type="color" id="grad-color2" class="${App.css.input} h-12 p-1" value="#ec4899"></div><div><label class="${App.css.label}">Angle (<span id="grad-angle-val">90</span>°)</label><input type="range" id="grad-angle" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700" min="0" max="360" value="90"></div></div><div class="relative"><label class="${App.css.label}">CSS Code</label><textarea id="grad-result" class="${App.css.inputReadonly} font-mono" readonly></textarea><button id="grad-copy" class="absolute top-8 right-2 text-gray-500 hover:text-blue-500 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-slate-700 transition"><i data-lucide="clipboard" class="w-5 h-5"></i></button></div></div>`; const logic = () => { const color1El = document.getElementById('grad-color1'), color2El = document.getElementById('grad-color2'), angleEl = document.getElementById('grad-angle'), angleValEl = document.getElementById('grad-angle-val'), previewEl = document.getElementById('grad-preview'), resultEl = document.getElementById('grad-result'), copyBtn = document.getElementById('grad-copy'); const updateGradient = () => { const color1 = color1El.value, color2 = color2El.value, angle = angleEl.value; angleValEl.textContent = angle; const gradient = `linear-gradient(${angle}deg, ${color1}, ${color2})`; previewEl.style.background = gradient; resultEl.value = `background: ${gradient};`; }; color1El.addEventListener('input', updateGradient); color2El.addEventListener('input', updateGradient); angleEl.addEventListener('input', updateGradient); copyBtn.addEventListener('click', () => { if (resultEl.value) App.helpers.copyToClipboard(resultEl.value, copyBtn); }); updateGradient(); }; return { html, logic }; },
             getAspectRatioCalculator: function() { const html = `<div class="space-y-4 max-w-md mx-auto"><div class="grid grid-cols-2 gap-4"><div><label class="${App.css.label}">Original Width</label><input type="number" id="ar-ow" class="${App.css.input}" placeholder="1920"></div><div><label class="${App.css.label}">Original Height</label><input type="number" id="ar-oh" class="${App.css.input}" placeholder="1080"></div></div><div class="grid grid-cols-2 gap-4"><div><label class="${App.css.label}">New Width</label><input type="number" id="ar-nw" class="${App.css.input}" placeholder="e.g., 1280"></div><div><label class="${App.css.label}">New Height</label><input type="number" id="ar-nh" class="${App.css.inputReadonly}" placeholder="Result" readonly></div></div><div id="ar-result" class="${App.css.resultContainer}">Aspect Ratio: -:-</div></div>`; const logic = () => { const ow = document.getElementById('ar-ow'), oh = document.getElementById('ar-oh'), nw = document.getElementById('ar-nw'), nh = document.getElementById('ar-nh'), resultEl = document.getElementById('ar-result'); function calculate() { const originalWidth = parseFloat(ow.value); const originalHeight = parseFloat(oh.value); if (!originalWidth || !originalHeight) { resultEl.textContent = 'Aspect Ratio: -:-'; nh.value = ''; return; }; const gcd = (a, b) => b === 0 ? a : gcd(b, a % b); const ratioGcd = gcd(originalWidth, originalHeight); resultEl.innerHTML = `Aspect Ratio: <strong class="text-blue-600">${originalWidth/ratioGcd}:${originalHeight/ratioGcd}</strong>`; resultEl.classList.add('show'); const newWidth = parseFloat(nw.value); if (newWidth) { nh.value = Math.round((newWidth / originalWidth) * originalHeight); } else { nh.value = ''; } } ow.addEventListener('input', calculate); oh.addEventListener('input', calculate); nw.addEventListener('input', calculate); }; return { html, logic }; },
-Read           getIpFinder: function() { const html = `<div class="text-center"><button id="ip-find" class="${App.css.button} max-w-xs mx-auto">Find My IP Address</button><div id="ip-result" class="${App.css.resultContainer}"></div></div>`; const logic = () => { document.getElementById('ip-find').addEventListener('click', () => { const resultEl = document.getElementById('ip-result'); resultEl.textContent = 'Fetching...'; resultEl.classList.add('show'); fetch('https://api.ipify.org?format=json').then(response => response.json()).then(data => { resultEl.innerHTML = `<div class="text-gray-500 dark:text-gray-400">Your Public IP is</div><div class="text-3xl font-bold my-2 text-blue-600 font-mono">${data.ip}</div>`; }).catch(error => { resultEl.textContent = 'Could not fetch IP.'; console.error('Error fetching IP:', error); }); }); }; return { html, logic }; },
+            getIpFinder: function() { const html = `<div class="text-center"><button id="ip-find" class="${App.css.button} max-w-xs mx-auto">Find My IP Address</button><div id="ip-result" class="${App.css.resultContainer}"></div></div>`; const logic = () => { document.getElementById('ip-find').addEventListener('click', () => { const resultEl = document.getElementById('ip-result'); resultEl.textContent = 'Fetching...'; resultEl.classList.add('show'); fetch('https://api.ipify.org?format=json').then(response => response.json()).then(data => { resultEl.innerHTML = `<div class="text-gray-500 dark:text-gray-400">Your Public IP is</div><div class="text-3xl font-bold my-2 text-blue-600 font-mono">${data.ip}</div>`; }).catch(error => { resultEl.textContent = 'Could not fetch IP.'; console.error('Error fetching IP:', error); }); }); }; return { html, logic }; },
             getRandomNamePicker: function() { const html = `<div class="space-y-4"><label class="${App.css.label}">Enter names (one per line)</label><textarea id="rnp-names" class="${App.css.input} min-h-[200px]" placeholder="Alice\nBob\nCharlie"></textarea><button id="rnp-pick" class="${App.css.button}">Pick a Winner</button><div id="rnp-result" class="${App.css.resultContainer}"></div></div>`; const logic = () => { document.getElementById('rnp-pick').addEventListener('click', () => { const namesText = document.getElementById('rnp-names').value; const resultEl = document.getElementById('rnp-result'); const names = namesText.split('\n').map(n => n.trim()).filter(n => n); if (names.length > 0) { const winner = names[Math.floor(Math.random() * names.length)]; resultEl.innerHTML = `<div class="text-gray-500 dark:text-gray-400">The winner is...</div><div class="text-4xl font-bold my-3 text-green-600">🎉 ${winner} 🎉</div>`; resultEl.classList.add('show'); } else { resultEl.textContent = 'Please enter some names.'; resultEl.classList.add('show'); } }); }; return { html, logic }; },
             getUnitConverter: function() { const html = `<div class="space-y-4 max-w-lg mx-auto"><div><label class="${App.css.label}">Conversion Type</label><select id="uc-type" class="${App.css.input}"><option value="length">Length</option><option value="weight">Weight</option><option value="temperature">Temperature</option></select></div><div class="flex items-center space-x-4"><div class="w-1/2"><label class="${App.css.label}">From</label><input type="number" id="uc-input1" class="${App.css.input}" value="1"><select id="uc-unit1" class="${App.css.input} mt-2"></select></div><div class="text-2xl font-bold pt-8 dark:text-slate-200">=</div><div class="w-1/2"><label class="${App.css.label}">To</label><input type="number" id="uc-input2" class="${App.css.inputReadonly}" readonly><select id="uc-unit2" class="${App.css.input} mt-2"></select></div></div></div>`; const logic = () => { const typeSelect = document.getElementById('uc-type'), input1 = document.getElementById('uc-input1'), input2 = document.getElementById('uc-input2'), unit1Select = document.getElementById('uc-unit1'), unit2Select = document.getElementById('uc-unit2'); const units = { length: { units: { m: 'Meter', km: 'Kilometer', mi: 'Mile', ft: 'Foot' }, conversions: { m: 1, km: 1000, mi: 1609.34, ft: 0.3048 } }, weight: { units: { kg: 'Kilogram', g: 'Gram', lb: 'Pound', oz: 'Ounce' }, conversions: { kg: 1, g: 0.001, lb: 0.453592, oz: 0.0283495 } }, temperature: { units: { c: 'Celsius', f: 'Fahrenheit', k: 'Kelvin' } } }; function populateUnits() { const selectedType = typeSelect.value, unitData = units[selectedType].units; unit1Select.innerHTML = ''; unit2Select.innerHTML = ''; for (const key in unitData) { unit1Select.innerHTML += `<option value="${key}">${unitData[key]}</option>`; unit2Select.innerHTML += `<option value="${key}">${unitData[key]}</option>`; } unit2Select.value = Object.keys(unitData)[1] || Object.keys(unitData)[0]; convert(); } function convert() { const type = typeSelect.value, val1 = parseFloat(input1.value), unit1 = unit1Select.value, unit2 = unit2Select.value; if (isNaN(val1)) { input2.value = ''; return; } let result; if (type === 'temperature') { if (unit1 === unit2) result = val1; else if (unit1 === 'c' && unit2 === 'f') result = val1 * 9 / 5 + 32; else if (unit1 === 'f' && unit2 === 'c') result = (val1 - 32) * 5 / 9; else if (unit1 === 'c' && unit2 === 'k') result = val1 + 273.15; else if (unit1 === 'k' && unit2 === 'c') result = val1 - 273.15; else if (unit1 === 'f' && unit2 === 'k') result = (val1 - 32) * 5 / 9 + 273.15; else if (unit1 === 'k' && unit2 === 'f') result = (val1 - 273.15) * 9 / 5 + 32; } else { const valueInBase = val1 * units[type].conversions[unit1]; result = valueInBase / units[type].conversions[unit2]; } input2.value = parseFloat(result.toFixed(4)); } typeSelect.addEventListener('change', populateUnits); input1.addEventListener('input', convert); unit1Select.addEventListener('change', convert); unit2Select.addEventListener('change', convert); populateUnits(); }; return { html, logic }; },
-s           getBase64Converter: function() { const html = `<div class="space-y-4 h-full flex flex-col"><label class="${App.css.label}">Input</label><textarea id="b64-input" class="${App.css.input} flex-grow font-mono min-h-[150px]" placeholder="Enter text to encode or Base64 to decode..."></textarea><div class="grid grid-cols-2 gap-4"><button id="b64-encode" class="${App.css.button}">Encode (to Base64)</button><button id="b64-decode" class="${App.css.buttonGray}">Decode (from Base64)</button></div><label class="${App.css.label}">Output</label><textarea id="b64-output" class="${App.css.inputReadonly} flex-grow font-mono min-h-[150px]" readonly></textarea></div>`; const logic = () => { document.getElementById('b64-encode').addEventListener('click', () => { const input = document.getElementById('b64-input').value; const outputEl = document.getElementById('b64-output'); try { outputEl.value = btoa(unescape(encodeURIComponent(input))); } catch (e) { outputEl.value = 'Error: Could not encode input.'; } }); document.getElementById('b64-decode').addEventListener('click', () => { const input = document.getElementById('b64-input').value; const outputEl = document.getElementById('b64-output'); try { outputEl.value = decodeURIComponent(escape(atob(input))); } catch (e) { outputEl.value = 'Error: Invalid Base64 string.'; } }); }; return { html, logic }; },
+            getBase64Converter: function() { const html = `<div class="space-y-4 h-full flex flex-col"><label class="${App.css.label}">Input</label><textarea id="b64-input" class="${App.css.input} flex-grow font-mono min-h-[150px]" placeholder="Enter text to encode or Base64 to decode..."></textarea><div class="grid grid-cols-2 gap-4"><button id="b64-encode" class="${App.css.button}">Encode (to Base64)</button><button id="b64-decode" class="${App.css.buttonGray}">Decode (from Base64)</button></div><label class="${App.css.label}">Output</label><textarea id="b64-output" class="${App.css.inputReadonly} flex-grow font-mono min-h-[150px]" readonly></textarea></div>`; const logic = () => { document.getElementById('b64-encode').addEventListener('click', () => { const input = document.getElementById('b64-input').value; const outputEl = document.getElementById('b64-output'); try { outputEl.value = btoa(unescape(encodeURIComponent(input))); } catch (e) { outputEl.value = 'Error: Could not encode input.'; } }); document.getElementById('b64-decode').addEventListener('click', () => { const input = document.getElementById('b64-input').value; const outputEl = document.getElementById('b64-output'); try { outputEl.value = decodeURIComponent(escape(atob(input))); } catch (e) { outputEl.value = 'Error: Invalid Base64 string.'; } }); }; return { html, logic }; },
             getPomodoroTimer: function() { const html = `<div class="text-center max-w-sm mx-auto"><div class="space-x-2 mb-4"><button id="pomo-mode-pomodoro" class="px-4 py-2 rounded-lg bg-blue-500 text-white transition">Pomodoro</button><button id="pomo-mode-short" class="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 dark:bg-slate-700 dark:hover:bg-slate-600 dark:text-slate-100 transition">Short Break</button><button id="pomo-mode-long" class="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 dark:bg-slate-700 dark:hover:bg-slate-600 dark:text-slate-100 transition">Long Break</button></div><div id="pomo-time" class="text-8xl font-bold my-8 dark:text-white">25:00</div><div class="space-x-4"><button id="pomo-start" class="${App.css.button} inline-block w-auto px-10">Start</button><button id="pomo-reset" class="${App.css.buttonGray} inline-block w-auto px-10">Reset</button></div></div>`; const logic = () => { let interval, timeLeft; const modes = { pomodoro: 1500, short: 300, long: 900 }; let currentMode = 'pomodoro'; const timeDisplay = document.getElementById('pomo-time'), startBtn = document.getElementById('pomo-start'), resetBtn = document.getElementById('pomo-reset'), modeBtns = { pomodoro: document.getElementById('pomo-mode-pomodoro'), short: document.getElementById('pomo-mode-short'), long: document.getElementById('pomo-mode-long') }; function updateDisplay() { const minutes = Math.floor(timeLeft / 60); const seconds = timeLeft % 60; timeDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`; } function resetTimer() { clearInterval(interval); interval = null; timeLeft = modes[currentMode]; updateDisplay(); startBtn.textContent = 'Start'; } function startTimer() { if (interval) { clearInterval(interval); interval = null; startBtn.textContent = 'Start'; } else { startBtn.textContent = 'Pause'; interval = setInterval(() => { timeLeft--; if (timeLeft < 0) { resetTimer(); alert('Time is up!'); return; } updateDisplay(); }, 1000); } } function switchMode(newMode) { currentMode = newMode; Object.keys(modeBtns).forEach(key => { modeBtns[key].classList.remove('bg-blue-500', 'text-white'); modeBtns[key].classList.add('bg-gray-200', 'hover:bg-gray-300', 'dark:bg-slate-700', 'dark:hover:bg-slate-600', 'dark:text-slate-100'); }); modeBtns[newMode].classList.add('bg-blue-500', 'text-white'); modeBtns[newMode].classList.remove('bg-gray-200', 'hover:bg-gray-300', 'dark:bg-slate-700', 'dark:hover:bg-slate-600', 'dark:text-slate-100'); resetTimer(); } startBtn.addEventListener('click', startTimer); resetBtn.addEventListener('click', resetTimer); modeBtns.pomodoro.addEventListener('click', () => switchMode('pomodoro')); modeBtns.short.addEventListener('click', () => switchMode('short')); modeBtns.long.addEventListener('click', () => switchMode('long')); resetTimer(); }; return { html, logic }; },
             getMortgageCalculator: function() { const html = `<div class="space-y-4 max-w-md mx-auto"><div><label class="${App.css.label}">Loan Amount ($)</label><input type="number" id="mc-amount" class="${App.css.input}" placeholder="e.g., 300000"></div><div><label class="${App.css.label}">Interest Rate (%)</label><input type="number" id="mc-rate" class="${App.css.input}" step="0.01" placeholder="e.g., 5.5"></div><div><label class="${App.css.label}">Loan Term (Years)</label><input type="number" id="mc-term" class="${App.css.input}" placeholder="e.g., 30"></div><button id="mc-calculate" class="${App.css.button}">Calculate</button><div id="mc-result" class="${App.css.resultContainer}"></div></div>`; const logic = () => { document.getElementById('mc-calculate').addEventListener('click', () => { const principal = parseFloat(document.getElementById('mc-amount').value), annualRate = parseFloat(document.getElementById('mc-rate').value), years = parseFloat(document.getElementById('mc-term').value), resultEl = document.getElementById('mc-result'); if (principal > 0 && annualRate > 0 && years > 0) { const monthlyRate = annualRate / 100 / 12; const numberOfPayments = years * 12; const monthlyPayment = principal * (monthlyRate * Math.pow(1 + monthlyRate, numberOfPayments)) / (Math.pow(1 + monthlyRate, numberOfPayments) - 1); const totalPayment = monthlyPayment * numberOfPayments; const totalInterest = totalPayment - principal; resultEl.innerHTML = `<div class="text-gray-500 dark:text-gray-400">Monthly Payment</div><div class="text-3xl font-bold my-2 text-blue-600">$${monthlyPayment.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}</div><div class="grid grid-cols-2 gap-4 text-sm mt-4"><div class="bg-gray-100 p-2 rounded dark:bg-slate-700"><div class="text-gray-500 dark:text-gray-400">Total Payment</div><div class="font-semibold dark:text-white">$${totalPayment.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}</div></div><div class="bg-gray-100 p-2 rounded dark:bg-slate-700"><div class="text-gray-500 dark:text-gray-400">Total Interest</div><div class="font-semibold dark:text-white">$${totalInterest.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}</div></div></div>`; resultEl.classList.add('show'); } else { resultEl.innerHTML = `Please enter valid numbers in all fields.`; resultEl.classList.add('show'); } }); }; return { html, logic }; },
         }
@@ -447,4 +463,3 @@ s           getBase64Converter: function() { const html = `<div class="spac
       document.addEventListener('DOMContentLoaded', () => App.init());
     </script>
 </body>
-</html>
