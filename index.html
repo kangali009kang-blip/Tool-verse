@@ -1,20 +1,34 @@
 <!DOCTYPE html>
+<!-- Added dark class for Tailwind Dark Mode -->
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- =================================================================== -->
+    <!-- ======================= PERFORMANCE HINTS ========================= -->
+    <!-- =================================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    <!-- Preload the main font stylesheet for faster rendering -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
     <!-- =================================================================== -->
     <!-- ========================= ENHANCED SEO ============================ -->
     <!-- =================================================================== -->
     
-    <!-- Primary Meta Tags -->
     <title>All-In-One Free Tools - Your Ultimate Online Toolkit</title>
-    <meta name="description" content="Discover a comprehensive collection of 40+ free online tools. From calculators and converters to text utilities and web development aids, get everything you need in one place.">
-    <meta name="keywords" content="free tools, online tools, web tools, calculator, converter, text tools, developer tools, free utilities, modern toolkit, seo tools, productivity apps">
+    <meta name="description" content="Discover a comprehensive collection of 40+ free, powerful, and privacy-focused online tools. From calculators and converters to text utilities and web development aids, get everything you need in one place.">
+    <meta name="keywords" content="free tools, online tools, web tools, calculator, converter, text tools, developer tools, free utilities, modern toolkit, seo tools, productivity apps, password generator, bmi calculator, qr code generator, online utilities">
     <meta name="author" content="ToolVerse">
+    <meta name="generator" content="Hand-coded with love">
+
+    <!-- Placeholder for Google Search Console verification -->
+    <meta name="google-site-verification" content="YOUR_GSC_VERIFICATION_CODE_HERE" />
     
-    <!-- Search Engine Instructions -->
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://your-domain.com" />
 
@@ -23,7 +37,7 @@
     <meta property="og:url" content="https://your-domain.com/">
     <meta property="og:title" content="All-In-One Free Tools - Your Ultimate Online Toolkit">
     <meta property="og:description" content="A curated collection of over 40 free, modern, and easy-to-use online tools for everyday tasks and development needs.">
-    <meta property="og:image" content="https://placehold.co/1200x630/1e293b/ffffff?text=Free+Online+Tools">
+    <meta property="og:image" content="https://placehold.co/1200x630/1e293b/ffffff?text=ToolVerse:+Free+Online+Tools">
     <meta property="og:site_name" content="ToolVerse">
 
     <!-- Twitter -->
@@ -31,10 +45,21 @@
     <meta property="twitter:url" content="https://your-domain.com/">
     <meta property="twitter:title" content="All-In-One Free Tools - Your Ultimate Online Toolkit">
     <meta property="twitter:description" content="A curated collection of over 40 free, modern, and easy-to-use online tools for everyday tasks and development needs.">
-    <meta property="twitter:image" content="https://placehold.co/1200x630/1e293b/ffffff?text=Free+Online+Tools">
+    <meta property="twitter:image" content="https://placehold.co/1200x630/1e293b/ffffff?text=ToolVerse:+Free+Online+Tools">
     
     <!-- Browser/UI Hinting -->
-    <meta name="theme-color" content="#3b82f6">
+    <meta name="theme-color" content="#3b82f6"> <!-- Light mode -->
+    <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)"> <!-- Dark mode -->
+
+    <!-- PWA / Add to Home Screen Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="ToolVerse">
+    <link rel="apple-touch-icon" href="https://placehold.co/180x180/1e293b/ffffff?text=TV">
+
+    <!-- Microsoft Tile Meta Tags -->
+    <meta name="msapplication-TileColor" content="#1e293b">
+    <meta name="msapplication-TileImage" content="https://placehold.co/270x270/1e293b/ffffff?text=TV">
 
     <!-- Favicon -->
     <link rel="icon" href="https://placehold.co/32x32/1e293b/ffffff?text=T" type="image/png">
@@ -54,897 +79,388 @@
         "target": "https://your-domain.com/#tools?q={search_term_string}",
         "query-input": "required name=search_term_string"
       },
-      "hasPart": [
-        { "@type": "SoftwareApplication", "name": "BMI Calculator", "applicationCategory": "HealthApplication", "operatingSystem": "Any", "description": "Calculate your Body Mass Index." },
-        { "@type": "SoftwareApplication", "name": "Password Generator", "applicationCategory": "SecurityApplication", "operatingSystem": "Any", "description": "Create strong, random passwords." },
-        { "@type": "SoftwareApplication", "name": "QR Code Generator", "applicationCategory": "Utilities", "operatingSystem": "Any", "description": "Create QR codes for URLs and text." },
-        { "@type": "SoftwareApplication", "name": "Word & Character Counter", "applicationCategory": "ProductivityApplication", "operatingSystem": "Any", "description": "Count words and characters in text." },
-        { "@type": "SoftwareApplication", "name": "Age Calculator", "applicationCategory": "HealthApplication", "operatingSystem": "Any", "description": "Calculate age from date of birth." },
-        { "@type": "SoftwareApplication", "name": "Lorem Ipsum Generator", "applicationCategory": "DeveloperApplication", "operatingSystem": "Any", "description": "Generate placeholder text." },
-        { "@type": "SoftwareApplication", "name": "Gradient Generator", "applicationCategory": "DesignApplication", "operatingSystem": "Any", "description": "Create CSS color gradients." },
-        { "@type": "SoftwareApplication", "name": "Aspect Ratio Calculator", "applicationCategory": "MultimediaApplication", "operatingSystem": "Any", "description": "Calculate aspect ratios for images and videos." },
-        { "@type": "SoftwareApplication", "name": "What Is My IP", "applicationCategory": "DeveloperApplication", "operatingSystem": "Any", "description": "Find your public IP address." },
-        { "@type": "SoftwareApplication", "name": "Random Name Picker", "applicationCategory": "Utilities", "operatingSystem": "Any", "description": "Pick a random name from a list." },
-        { "@type": "SoftwareApplication", "name": "Unit Converter", "applicationCategory": "ProductivityApplication", "operatingSystem": "Any", "description": "Convert between various units of measurement." },
-        { "@type": "SoftwareApplication", "name": "Pomodoro Timer", "applicationCategory": "ProductivityApplication", "operatingSystem": "Any", "description": "A timer to boost your productivity." },
-        { "@type": "SoftwareApplication", "name": "Base64 Encoder/Decoder", "applicationCategory": "DeveloperApplication", "operatingSystem": "Any", "description": "Encode and decode Base64 strings." },
-        { "@type": "SoftwareApplication", "name": "Mortgage Calculator", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "description": "Calculate your monthly mortgage payments." }
+      "mainEntity": [
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://your-domain.com/#home" },
+                { "@type": "ListItem", "position": 2, "name": "Features", "item": "https://your-domain.com/#features" },
+                { "@type": "ListItem", "position": 3, "name": "Tools", "item": "https://your-domain.com/#tools" },
+                { "@type": "ListItem", "position": 4, "name": "About", "item": "https://your-domain.com/#about" }
+            ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Are the tools on ToolVerse really free to use?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, absolutely. All tools available on ToolVerse are 100% free to use with no hidden costs, subscriptions, or usage limits. Our mission is to provide accessible utilities for everyone."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is my data safe when I use these tools?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Your privacy is our top priority. ToolVerse is a static website, which means all calculations and data processing for our internal tools happen directly in your browser. No data is ever sent to or stored on our servers. We do not use tracking cookies or ads."
+              }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need to install any software or plugins?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No, you do not need to install anything. All our tools run directly in your web browser. As long as you have a modern browser like Chrome, Firefox, or Safari, you can access all functionalities instantly."
+                }
+            }
+          ]
+        }
       ]
     }
     </script>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts (Loaded via preload link) -->
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- QR Code Library -->
-    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.js"></script>
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+      tailwind.config = { darkMode: 'class' }
+    </script>
+    
+    <!-- Libraries (DEFERRED for performance) -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.js" defer></script>
+    <script src="https://unpkg.com/lucide@latest" defer></script>
 
-
-    <!-- Custom Styles and Transitions -->
     <style>
-        :root {
-            --primary-color: #3b82f6; /* blue-500 */
-            --secondary-color: #1e293b; /* slate-800 */
-            --background-color: #f8fafc; /* slate-50 */
-            --text-color: #334155; /* slate-700 */
-        }
-        html {
-             scroll-padding-top: 80px; /* Offset for sticky header */
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--background-color);
-            background-image: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
-            color: var(--text-color);
-        }
-        .tool-card {
-            transition: all 0.3s ease;
-            background-color: white;
-            overflow: hidden;
-            border: 2px solid transparent;
-            min-height: 220px;
-        }
-        .tool-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-        }
-        .tool-card.active {
-            transform: translateY(-8px) scale(1.03);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-            border-color: var(--primary-color);
-        }
-        .modal-backdrop {
-            transition: opacity 0.3s ease-in-out;
-        }
-        .modal-content {
-            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-        }
-        .fade-in {
-            animation: fadeIn 0.5s ease-in-out forwards;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        /* Styles for internal tools */
-        .tool-input {
-            @apply w-full p-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition;
-        }
-        .tool-button {
-            @apply w-full p-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold rounded-lg shadow-md hover:shadow-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-1;
-        }
-        .tool-label {
-            @apply block text-sm font-medium text-gray-700 mb-1;
-        }
-        .result-container {
-            @apply text-center p-6 bg-gray-50 border-2 border-dashed border-gray-200 rounded-lg mt-4 hidden;
-        }
-        .result-container.show {
-            display: block;
-            animation: fadeInResult 0.5s ease-in-out forwards;
-        }
-        @keyframes fadeInResult {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
+        :root { --primary-color: #3b82f6; }
+        html { scroll-padding-top: 80px; }
+        body { font-family: 'Inter', sans-serif; }
+        #animated-bg { width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: -1; background: linear-gradient(-45deg, #eef2ff, #dbeafe, #e0f2fe, #f0f9ff); background-size: 400% 400%; animation: gradient-animation 20s ease infinite; }
+        .dark #animated-bg { background: linear-gradient(-45deg, #1e293b, #0f172a, #111827, #1e293b); background-size: 400% 400%; animation: gradient-animation 25s ease infinite; }
+        @keyframes gradient-animation { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        .tool-card::before { content: ""; position: absolute; inset: 0; border-radius: 1rem; padding: 2px; background: linear-gradient(45deg, var(--primary-color), #ec4899); -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude; opacity: 0; transition: opacity 0.3s ease-in-out; }
+        .tool-card:hover::before { opacity: 0.5; }
+        .tool-card { transition: all 0.3s ease; overflow: hidden; border: 2px solid transparent; min-height: 220px; }
+        .tool-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+        .dark .tool-card:hover { box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2), 0 8px 10px -6px rgb(0 0 0 / 0.2); }
+        .tool-card.active { transform: translateY(-8px) scale(1.03); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); border-color: var(--primary-color); }
+        [data-animate] { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        [data-animate].in-view { opacity: 1; transform: translateY(0); }
+        .result-container.show { display: block; animation: fadeInResult 0.5s ease-in-out forwards; }
+        @keyframes fadeInResult { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
+        /* FAQ Accordion Styles */
+        .faq-question summary::-webkit-details-marker { display: none; }
+        .faq-question summary { list-style: none; }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased bg-transparent text-slate-700 dark:text-slate-300 transition-colors duration-300">
 
-    <!-- Header -->
-    <header id="home" class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-40">
+    <div id="animated-bg"></div>
+
+    <header id="home" class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-40 dark:bg-slate-900/80 dark:shadow-slate-700/50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#home" class="text-2xl font-bold text-[var(--secondary-color)]">
-                <span class="text-[var(--primary-color)]">Tool</span>Verse
-            </a>
+            <a href="#home" class="text-2xl font-bold text-slate-800 dark:text-slate-100"><span class="text-blue-500">Tool</span>Verse</a>
             <div class="hidden md:flex items-center space-x-6">
-                <a href="#tools" class="text-gray-600 hover:text-[var(--primary-color)] transition-colors">Tools</a>
-                <a href="#" id="about-link" class="text-gray-600 hover:text-[var(--primary-color)] transition-colors">About</a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-[var(--primary-color)] transition-colors">External Link</a>
+                <a href="#features" class="text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-500 transition-colors">Features</a>
+                <a href="#tools" class="text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-500 transition-colors">Tools</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-500 transition-colors">About</a>
+                <a href="#faq" class="text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-500 transition-colors">FAQ</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-500 transition-colors">Contact</a>
             </div>
-            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-            </button>
+            <div class="flex items-center">
+                <button id="dark-mode-toggle" class="p-2 rounded-full text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors" aria-label="Toggle dark mode">
+                    <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+                    <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
+                </button>
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 dark:text-gray-300 focus:outline-none ml-4" aria-label="Open menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
         </nav>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-            <a href="#tools" class="block py-2 text-gray-600 hover:text-[var(--primary-color)] transition-colors">Tools</a>
-            <a href="#" id="about-link-mobile" class="block py-2 text-gray-600 hover:text-[var(--primary-color)] transition-colors">About</a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="block py-2 text-gray-600 hover:text-[var(--primary-color)] transition-colors">External Link</a>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 border-t dark:border-slate-700">
+            <a href="#features" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors">Features</a>
+            <a href="#tools" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors">Tools</a>
+            <a href="#about" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors">About</a>
+            <a href="#faq" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors">FAQ</a>
+            <a href="#contact" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors">Contact</a>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-12">
-
-        <!-- Hero Section -->
-        <section class="text-center py-16 fade-in">
-            <h1 class="text-4xl md:text-6xl font-extrabold text-[var(--secondary-color)] mb-4">Your Ultimate Digital Toolkit</h1>
-            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">One-stop destination for a universe of free, powerful, and easy-to-use online tools. Boost your productivity instantly.</p>
-            <div class="flex justify-center">
-                <a href="#tools" class="bg-[var(--primary-color)] text-white font-bold py-3 px-8 rounded-full hover:bg-blue-600 transition-all duration-300 shadow-lg">Explore Tools</a>
+    <main class="container mx-auto px-6 py-12 relative z-10">
+        <section class="text-center py-16" data-animate>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-800 dark:text-slate-100 mb-4">Your Ultimate Digital Toolkit</h1>
+            <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto mb-8">One-stop destination for a universe of free, powerful, and privacy-focused online tools. Boost your productivity instantly.</p>
+            <div class="flex justify-center"><a href="#tools" class="bg-blue-500 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">Explore All Tools</a></div>
+        </section>
+        
+        <section id="features" class="py-16">
+             <div class="text-center mb-12" data-animate>
+                 <h2 class="text-3xl font-bold text-center text-slate-800 dark:text-slate-100">Why ToolVerse?</h2>
+                 <p class="text-slate-600 dark:text-slate-400 mt-2">A toolkit designed for the modern web.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white/50 dark:bg-slate-800/50 backdrop-blur-md p-6 rounded-2xl text-center" data-animate><i data-lucide="zap" class="w-12 h-12 text-blue-500 mx-auto mb-4"></i><h3 class="text-xl font-bold text-slate-800 dark:text-slate-100 mb-2">Blazing Fast</h3><p class="text-slate-600 dark:text-slate-400">Hosted on Cloudflare's edge network for instant load times worldwide.</p></div>
+                <div class="bg-white/50 dark:bg-slate-800/50 backdrop-blur-md p-6 rounded-2xl text-center" data-animate><i data-lucide="shield-check" class="w-12 h-12 text-blue-500 mx-auto mb-4"></i><h3 class="text-xl font-bold text-slate-800 dark:text-slate-100 mb-2">Privacy First</h3><p class="text-slate-600 dark:text-slate-400">No ads, no trackers, no cookies. Your data is yours alone.</p></div>
+                <div class="bg-white/50 dark:bg-slate-800/50 backdrop-blur-md p-6 rounded-2xl text-center" data-animate><i data-lucide="gift" class="w-12 h-12 text-blue-500 mx-auto mb-4"></i><h3 class="text-xl font-bold text-slate-800 dark:text-slate-100 mb-2">Completely Free</h3><p class="text-slate-600 dark:text-slate-400">All tools are 100% free to use, forever. No subscriptions, no limits.</p></div>
+                <div class="bg-white/50 dark:bg-slate-800/50 backdrop-blur-md p-6 rounded-2xl text-center" data-animate><i data-lucide="wand-2" class="w-12 h-12 text-blue-500 mx-auto mb-4"></i><h3 class="text-xl font-bold text-slate-800 dark:text-slate-100 mb-2">Modern & Clean</h3><p class="text-slate-600 dark:text-slate-400">A beautiful, responsive interface with dark mode support.</p></div>
             </div>
         </section>
 
-        <!-- Tools Section -->
+        <section id="featured" class="py-16">
+            <div class="text-center mb-12" data-animate><h2 class="text-3xl font-bold text-center text-slate-800 dark:text-slate-100">Popular & Featured Online Tools</h2><p class="text-slate-600 dark:text-slate-400 mt-2">Some of our most popular and powerful utilities.</p></div>
+            <div id="featured-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto"></div>
+        </section>
+        
         <section id="tools" class="py-16">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-bold text-center text-[var(--secondary-color)] mb-4">Find the Right Tool</h2>
-                <div class="relative mb-12">
-                    <input type="text" id="search-input" placeholder="Search for a tool (e.g., 'Calculator', 'Color Picker')..." class="w-full p-4 pr-12 text-lg border-2 border-gray-300 rounded-full focus:ring-2 focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)] transition-shadow">
-                    <svg class="w-6 h-6 text-gray-400 absolute top-1/2 right-5 transform -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-                </div>
+            <div class="max-w-4xl mx-auto text-center" data-animate>
+                <h2 class="text-3xl font-bold text-slate-800 dark:text-slate-100 mb-4">The Complete Toolkit</h2>
+                <div id="category-filters" class="flex flex-wrap justify-center gap-2 my-8"></div>
+                <div class="relative my-12"><input type="text" id="search-input" placeholder="Search over 40 tools (e.g., 'Password', 'Color')..." class="w-full p-4 pr-12 text-lg border-2 border-gray-300 rounded-full focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow dark:bg-slate-800/50 dark:border-slate-700 dark:text-white dark:placeholder-gray-500 backdrop-blur-sm"><i data-lucide="search" class="w-6 h-6 text-gray-400 absolute top-1/2 right-5 transform -translate-y-1/2"></i></div>
             </div>
-
-            <!-- Main Layout Container -->
             <div class="flex flex-col lg:flex-row gap-8 items-start">
-                
-                <!-- Left Side: Grid of Tools -->
-                <div id="grid-wrapper" class="w-full lg:w-full transition-all duration-300">
-                    <div id="tool-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                        <!-- Tool cards will be dynamically inserted here by JavaScript -->
+                <div id="grid-wrapper" class="w-full lg:w-full transition-all duration-300"><div id="tool-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"></div><p id="no-results" class="text-center text-gray-500 dark:text-gray-400 text-xl hidden mt-12">No tools found. Try a different search term.</p></div>
+                <aside id="tool-viewer-wrapper" class="w-full lg:w-2/5 hidden sticky top-28">
+                    <div id="tool-viewer-container" class="bg-white/80 rounded-2xl shadow-xl border border-gray-200 p-6 relative dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur-md">
+                        <div class="flex justify-between items-center mb-4"><h3 id="tool-viewer-title" class="text-2xl font-bold text-slate-800 dark:text-slate-100"></h3><button id="close-tool-viewer" aria-label="Close Tool" class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-500 transition-colors"><i data-lucide="x-circle" class="w-8 h-8"></i></button></div>
+                        <div id="tool-viewer-content"></div>
                     </div>
-                    <p id="no-results" class="text-center text-gray-500 text-xl hidden mt-12">No tools found. Try a different search term.</p>
-                </div>
-
-                <!-- Right Side: Tool Viewer (Sidebar) -->
-                <div id="tool-viewer-wrapper" class="w-full lg:w-2/5 hidden sticky top-28">
-                    <div id="tool-viewer-container" class="bg-white rounded-2xl shadow-xl border border-gray-200 p-6 relative">
-                        <div class="flex justify-between items-center mb-4">
-                            <h3 id="tool-viewer-title" class="text-2xl font-bold text-[var(--secondary-color)]"></h3>
-                            <button id="close-tool-viewer" aria-label="Close Tool" class="text-gray-500 hover:text-red-500 transition-colors">
-                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                            </button>
-                        </div>
-                        <div id="tool-viewer-content">
-                            <!-- Selected tool's UI will be injected here -->
-                        </div>
-                    </div>
-                </div>
-
+                </aside>
             </div>
+        </section>
+        
+        <section id="about" class="py-16">
+            <div class="max-w-4xl mx-auto text-center" data-animate>
+                 <h2 class="text-3xl font-bold text-center text-slate-800 dark:text-slate-100">About ToolVerse</h2>
+                 <div class="mt-8 text-lg text-slate-600 dark:text-slate-400 space-y-6">
+                    <p><strong>ToolVerse</strong> is a free, curated collection of high-quality online tools designed to make your digital life easier and more productive. Our mission is to provide a single, reliable platform where you can find the right utility for any task, without ads or distractions.</p>
+                    <p>This site is built with modern, lightweight web technologies for maximum performance, following best practices recommended by industry leaders like <a href="https://web.dev/" target="_blank" rel="noopener noreferrer nofollow" class="text-blue-500 hover:underline">Google's web.dev</a> and the <a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener noreferrer nofollow" class="text-blue-500 hover:underline">MDN Web Docs</a>. We stay up-to-date with design and development trends from publications such as <a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener noreferrer nofollow" class="text-blue-500 hover:underline">Smashing Magazine</a> to ensure a top-tier user experience.</p>
+                    <p>Whether you're a developer, a student, or just someone who needs to quickly convert a file, we've got you covered. Enjoy your stay!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-16">
+            <div class="max-w-3xl mx-auto" data-animate>
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-center text-slate-800 dark:text-slate-100">Frequently Asked Questions</h2>
+                    <p class="text-slate-600 dark:text-slate-400 mt-2">Your questions, answered.</p>
+                </div>
+                <div class="space-y-4">
+                    <details class="faq-question bg-white/50 dark:bg-slate-800/50 backdrop-blur-md p-6 rounded-lg group" open>
+                        <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center text-slate-800 dark:text-slate-100">
+                            Are the tools on ToolVerse really free to use?
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
+                        </summary>
+                        <p class="mt-4 text-slate-600 dark:text-slate-400">Yes, absolutely. All tools available on ToolVerse are 100% free to use with no hidden costs, subscriptions, or usage limits. Our mission is to provide accessible utilities for everyone.</p>
+                    </details>
+                    <details class="faq-question bg-white/50 dark:bg-slate-800/50 backdrop-blur-md p-6 rounded-lg group">
+                        <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center text-slate-800 dark:text-slate-100">
+                            Is my data safe when I use these tools?
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
+                        </summary>
+                        <p class="mt-4 text-slate-600 dark:text-slate-400">Your privacy is our top priority. ToolVerse is a static website, which means all calculations and data processing for our internal tools happen directly in your browser. No data is ever sent to or stored on our servers. We do not use tracking cookies or ads.</p>
+                    </details>
+                    <details class="faq-question bg-white/50 dark:bg-slate-800/50 backdrop-blur-md p-6 rounded-lg group">
+                        <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center text-slate-800 dark:text-slate-100">
+                            Do I need to install any software or plugins?
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
+                        </summary>
+                        <p class="mt-4 text-slate-600 dark:text-slate-400">No, you do not need to install anything. All our tools run directly in your web browser. As long as you have a modern browser like Chrome, Firefox, or Safari, you can access all functionalities instantly.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats" class="py-16" data-animate>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div><h3 class="text-5xl font-extrabold text-blue-500" data-counter="40">+</h3><p class="mt-2 text-lg text-slate-600 dark:text-slate-400">Powerful Tools</p></div>
+                <div><h3 class="text-5xl font-extrabold text-blue-500" data-counter="10">+</h3><p class="mt-2 text-lg text-slate-600 dark:text-slate-400">Unique Categories</p></div>
+                <div><h3 class="text-5xl font-extrabold text-blue-500" data-counter="100">%</h3><p class="mt-2 text-lg text-slate-600 dark:text-slate-400">Completely Free</p></div>
+            </div>
+        </section>
+
+        <section id="fun-fact" class="py-16" data-animate>
+             <div class="bg-white/50 dark:bg-slate-800/50 backdrop-blur-md p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700 text-center max-w-3xl mx-auto">
+                 <h3 class="text-2xl font-bold text-slate-800 dark:text-slate-100 mb-4">Did You Know?</h3>
+                 <p id="fact-text" class="text-lg text-slate-600 dark:text-slate-400 italic"></p>
+             </div>
         </section>
     </main>
     
-    <!-- About Modal -->
-    <div id="about-modal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50 hidden modal-backdrop opacity-0">
-        <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full p-8 relative transform scale-95 opacity-0 modal-content">
-            <button id="close-about-modal" aria-label="Close About Modal" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 transition-colors">
-                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-            </button>
-            <h2 class="text-3xl font-bold text-[var(--secondary-color)] mb-4">About ToolVerse</h2>
-            <div class="text-gray-600 space-y-4">
-                <p><strong>ToolVerse</strong> is a free, curated collection of high-quality online tools designed to make your digital life easier and more productive. Our mission is to provide a single, reliable platform where you can find the right utility for any task, without ads or distractions.</p>
-                <p>Whether you're a developer, a student, a designer, or just someone who needs to quickly convert a file or calculate something, we've got you covered. Our tools are simple, powerful, and built with a modern user experience in mind.</p>
-                <p>This is a static website, which means it's incredibly fast and secure. It's built with modern web technologies and is perfect for hosting on platforms like Cloudflare Pages. This is an example of an internal link that goes to the <a href="#tools" class="text-[var(--primary-color)] hover:underline" id="internal-link-about">tools section</a>. For external resources, check out this backlink to a great tech site: <a href="https://techcrunch.com" target="_blank" rel="noopener noreferrer" class="text-[var(--primary-color)] hover:underline">TechCrunch</a>.</p>
-                <p>We are constantly adding new tools and improving existing ones. Enjoy your stay!</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-[var(--secondary-color)] text-gray-300 pt-16 pb-8">
+    <footer id="contact" class="bg-slate-800 text-gray-300 pt-16 pb-8 dark:bg-slate-900/80 backdrop-blur-sm relative z-10">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
-                <div class="lg:col-span-2">
-                    <a href="#home" class="text-3xl font-bold text-white mb-4 block">
-                        <span class="text-[var(--primary-color)]">Tool</span>Verse
-                    </a>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#home" class="hover:text-[var(--primary-color)] transition-colors">Home</a></li>
-                        <li><a href="#tools" class="hover:text-[var(--primary-color)] transition-colors">All Tools</a></li>
-                        <li><a href="#" id="about-link-footer" class="hover:text-[var(--primary-color)] transition-colors">About Us</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Follow Us</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" aria-label="Follow us on Twitter" class="text-gray-400 hover:text-white transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.223.085a4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
-                        </a>
-                        <a href="#" aria-label="Check our GitHub" class="text-gray-400 hover:text-white transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"/></svg>
-                        </a>
-                        <a href="#" aria-label="Connect with us on LinkedIn" class="text-gray-400 hover:text-white transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-12 border-t border-gray-700 pt-8 text-center">
-                <p class="text-gray-500">&copy; All Rights Reserved. Built with ❤️ for the open web. | <a href="mailto:kangali009kang@gmail.com" class="hover:text-[var(--primary-color)] transition-colors">kangali009kang@gmail.com</a></p>
-            </div>
+             <div class="text-center mb-12"><h2 class="text-3xl font-bold text-white">Contact Us</h2><p class="text-slate-400 mt-2">Have a question or a suggestion for a new tool? Reach out!</p></div>
+             <div class="flex justify-center items-center space-x-8 text-center mb-12">
+                 <a href="mailto:kangali009kang@gmail.com" class="text-slate-300 hover:text-blue-500 transition-colors" aria-label="Email Us"><i data-lucide="mail" class="w-10 h-10 mx-auto mb-2"></i><p>Email Us</p></a>
+                 <a href="#" class="text-slate-300 hover:text-blue-500 transition-colors" aria-label="Follow us on Twitter"><i data-lucide="twitter" class="w-10 h-10 mx-auto mb-2"></i><p>Twitter</p></a>
+                 <a href="#" class="text-slate-300 hover:text-blue-500 transition-colors" aria-label="Check our GitHub"><i data-lucide="github" class="w-10 h-10 mx-auto mb-2"></i><p>GitHub</p></a>
+             </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 text-center"><p class="text-gray-500">&copy; All Rights Reserved. Built with ❤️ for the open web.</p></div>
         </div>
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            lucide.createIcons();
-            // --- Tool Data ---
-            const toolsData = [
-                // Internal Tools (Built with JS)
-                { title: 'BMI Calculator', category: 'Health', description: 'Calculate your Body Mass Index.', icon: '❤️', type: 'internal' },
-                { title: 'Password Generator', category: 'Security', description: 'Create strong, random passwords.', icon: '🔒', type: 'internal' },
-                { title: 'QR Code Generator', category: 'Utility', description: 'Create QR codes for URLs and text.', icon: '📱', type: 'internal' },
-                { title: 'Word & Character Counter', category: 'Text', description: 'Count words and characters in text.', icon: '🧮', type: 'internal' },
-                { title: 'Age Calculator', category: 'Health', description: 'Calculate age from date of birth.', icon: '🎂', type: 'internal' },
-                { title: 'Lorem Ipsum Generator', category: 'Text', description: 'Generate placeholder text.', icon: '📝', type: 'internal' },
-                { title: 'Gradient Generator', category: 'Design', description: 'Create CSS color gradients.', icon: '🎨', type: 'internal' },
-                { title: 'Aspect Ratio Calculator', category: 'Image', description: 'Calculate aspect ratios for images and videos.', icon: '📐', type: 'internal' },
-                { title: 'What Is My IP', category: 'Developer', description: 'Find your public IP address.', icon: '🌐', type: 'internal' },
-                { title: 'Random Name Picker', category: 'Utility', description: 'Pick a random name from a list.', icon: '🎲', type: 'internal' },
-                { title: 'Unit Converter', category: 'Converter', description: 'Convert between various units of measurement.', icon: '🔄', type: 'internal' },
-                { title: 'Pomodoro Timer', category: 'Productivity', description: 'A timer to boost your productivity.', icon: '🍅', type: 'internal' },
-                { title: 'Base64 Encoder/Decoder', category: 'Developer', description: 'Encode and decode Base64 strings.', icon: '🔐', type: 'internal' },
-                { title: 'Mortgage Calculator', category: 'Finance', description: 'Calculate your monthly mortgage payments.', icon: '🏠', type: 'internal' },
-                
-                // External Tools (Open in new tab)
-                { title: 'Color Picker', category: 'Developer', description: 'Pick colors and get their HEX, RGB codes.', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color', icon: '🎨', type: 'external' },
-                { title: 'JSON Formatter', category: 'Developer', description: 'Format and validate JSON data.', url: 'https://jsonformatter.curiousconcept.com/', icon: '📄', type: 'external' },
-                { title: 'Image Compressor', category: 'Image', description: 'Reduce the file size of your images.', url: 'https://tiny-img.com/image-compressor/', icon: '🖼️', type: 'external' },
-                { title: 'Markdown Editor', category: 'Text', description: 'A simple online Markdown editor.', url: 'https://stackedit.io/', icon: '✍️', type: 'external' },
-                { title: 'World Clock', category: 'Utility', description: 'Check the time in different time zones.', url: 'https://www.timeanddate.com/worldclock/', icon: '🌍', type: 'external' },
-                { title: 'Code Playground', category: 'Developer', description: 'Test HTML, CSS, and JS code online.', url: 'https://codepen.io/pen/', icon: '💻', type: 'external' },
-                { title: 'Currency Converter', category: 'Converter', description: 'Live exchange rates for currencies.', url: 'https://www.xe.com/currencyconverter/', icon: '💰', type: 'external' },
-                { title: 'Regex Tester', category: 'Developer', description: 'Test and debug regular expressions.', url: 'https://regex101.com/', icon: '🔬', type: 'external' },
-                { title: 'File Converter', category: 'Converter', description: 'Convert documents, images, and videos.', url: 'https://www.freeconvert.com/', icon: '📂', type: 'external' },
-                { title: 'Drawing App', category: 'Utility', description: 'A simple online drawing board.', url: 'https://witeboard.com/', icon: '✏️', type: 'external' },
-                { title: 'Screen Recorder', category: 'Utility', description: 'Record your screen directly from the browser.', url: 'https://www.screencapture.com/', icon: '🎥', type: 'external' },
-                { title: 'URL Shortener', category: 'Utility', description: 'Shorten long URLs for easy sharing.', url: 'https://tinyurl.com/app', icon: '🔗', type: 'external' },
-                { title: 'PDF Editor', category: 'Utility', description: 'Edit, merge, and split PDF documents online.', url: 'https://www.ilovepdf.com/pdf_editor', icon: '📑', type: 'external' },
-                { title: 'Typing Test', category: 'Productivity', description: 'Test your typing speed and accuracy.', url: 'https://www.typing.com/student/test', icon: '⌨️', type: 'external' },
-                { title: 'Online Whiteboard', category: 'Productivity', description: 'Collaborate with a shared online whiteboard.', url: 'https://miro.com/online-whiteboard/', icon: '🧑‍🏫', type: 'external' },
-                { title: 'Color Palette Generator', category: 'Design', description: 'Create beautiful color palettes.', url: 'https://coolors.co/', icon: '🌈', type: 'external' },
-                { title: 'SVG Editor', category: 'Design', description: 'A simple online vector graphics editor.', url: 'https://editor.method.ac/', icon: '✨', type: 'external' },
-                { title: 'Internet Speed Test', category: 'Utility', description: 'Check your internet connection speed.', url: 'https://www.speedtest.net/', icon: '⚡', type: 'external' },
-                { title: 'WebP to JPG/PNG', category: 'Image', description: 'Convert WebP images to other formats.', url: 'https://ezgif.com/webp-to-jpg', icon: '🔄', type: 'external' },
-                { title: 'Website Down Checker', category: 'Developer', description: 'Check if a website is down or not.', url: 'https://downforeveryoneorjustme.com/', icon: '🤔', type: 'external' },
-                { title: 'ASCII Art Generator', category: 'Text', description: 'Convert text to ASCII art.', url: 'https://patorjk.com/software/taag/', icon: '🎭', type: 'external' },
-                { title: 'Online Poll Maker', category: 'Productivity', description: 'Create simple online polls.', url: 'https://www.surveymonkey.com/mp/take-a-poll/', icon: '📊', type: 'external' },
-                { title: 'Invoice Generator', category: 'Finance', description: 'Create professional invoices for free.', url: 'https://invoice-generator.com/', icon: '💼', type: 'external' },
-                { title: 'Code Diff Checker', category: 'Developer', description: 'Compare two text files to find differences.', url: 'https://www.diffchecker.com/', icon: '👀', type: 'external' },
-                { title: 'Timezone Converter', category: 'Converter', description: 'Convert time between different timezones.', url: 'https://www.worldtimebuddy.com/', icon: '🕒', type: 'external' }
-            ];
+      const App = {
+        toolsData: [
+            { id: 'bmi', title: 'BMI Calculator', category: 'Health', description: 'Calculate your Body Mass Index.', icon: 'heart-pulse', type: 'internal', isFeatured: true },
+            { id: 'password', title: 'Password Generator', category: 'Security', description: 'Create strong, random passwords.', icon: 'lock', type: 'internal', isFeatured: true },
+            { id: 'qrcode', title: 'QR Code Generator', category: 'Utility', description: 'Create QR codes for URLs and text.', icon: 'qr-code', type: 'internal', isFeatured: true },
+            { id: 'wordcounter', title: 'Word & Character Counter', category: 'Text', description: 'Count words and characters in text.', icon: 'binary', type: 'internal' },
+            { id: 'age', title: 'Age Calculator', category: 'Health', description: 'Calculate age from date of birth.', icon: 'cake', type: 'internal' },
+            { id: 'lorem', title: 'Lorem Ipsum Generator', category: 'Text', description: 'Generate placeholder text.', icon: 'pilcrow', type: 'internal' },
+            { id: 'gradient', title: 'Gradient Generator', category: 'Design', description: 'Create CSS color gradients.', icon: 'palette', type: 'internal', isFeatured: true },
+            { id: 'aspectratio', title: 'Aspect Ratio Calculator', category: 'Image', description: 'Calculate aspect ratios for images and videos.', icon: 'aspect-ratio', type: 'internal' },
+            { id: 'ip', title: 'What Is My IP', category: 'Developer', description: 'Find your public IP address.', icon: 'globe', type: 'internal' },
+            { id: 'namepicker', title: 'Random Name Picker', category: 'Utility', description: 'Pick a random name from a list.', icon: 'dices', type: 'internal' },
+            { id: 'unit', title: 'Unit Converter', category: 'Converter', description: 'Convert between various units of measurement.', icon: 'refresh-cw', type: 'internal' },
+            { id: 'pomodoro', title: 'Pomodoro Timer', category: 'Productivity', description: 'A timer to boost your productivity.', icon: 'timer', type: 'internal' },
+            { id: 'base64', title: 'Base64 Encoder/Decoder', category: 'Developer', description: 'Encode and decode Base64 strings.', icon: 'shield-lock', type: 'internal' },
+            { id: 'mortgage', title: 'Mortgage Calculator', category: 'Finance', description: 'Calculate your monthly mortgage payments.', icon: 'home', type: 'internal' },
+            { id: 'json', title: 'JSON Formatter', category: 'Developer', description: 'Format and validate JSON data.', url: 'https://jsonformatter.curiousconcept.com/', icon: 'file-json', type: 'external', isFeatured: true },
+            { id: 'imagecompress', title: 'Image Compressor', category: 'Image', description: 'Reduce the file size of your images.', url: 'https://tiny-img.com/image-compressor/', icon: 'image-down', type: 'external', isFeatured: true },
+            { id: 'markdown', title: 'Markdown Editor', category: 'Text', description: 'A simple online Markdown editor.', url: 'https://stackedit.io/', icon: 'file-text', type: 'external' },
+            { id: 'worldclock', title: 'World Clock', category: 'Utility', description: 'Check the time in different time zones.', url: 'https://www.timeanddate.com/worldclock/', icon: 'clock', type: 'external' },
+            { id: 'codepen', title: 'Code Playground', category: 'Developer', description: 'Test HTML, CSS, and JS code online.', url: 'https://codepen.io/pen/', icon: 'code', type: 'external' },
+            { id: 'currency', title: 'Currency Converter', category: 'Converter', description: 'Live exchange rates for currencies.', url: 'https://www.xe.com/currencyconverter/', icon: 'dollar-sign', type: 'external' },
+            { id: 'regex', title: 'Regex Tester', category: 'Developer', description: 'Test and debug regular expressions.', url: 'https://regex101.com/', icon: 'microscope', type: 'external' },
+            { id: 'fileconvert', title: 'File Converter', category: 'Converter', description: 'Convert documents, images, and videos.', url: 'https://www.freeconvert.com/', icon: 'file-cog', type: 'external' },
+            { id: 'speedtest', title: 'Internet Speed Test', category: 'Utility', description: 'Check your internet connection speed.', url: 'https://www.speedtest.net/', icon: 'gauge', type: 'external' },
+            { id: 'downcheck', title: 'Website Down Checker', category: 'Developer', description: 'Check if a website is down or not.', url: 'https://downforeveryoneorjustme.com/', icon: 'server-off', type: 'external' },
+        ],
+        funFacts: [ "The first computer mouse was made of wood.", "The term 'bug' for a computer glitch originated from a real moth found in a computer in 1947.", "More than 5 billion people use the internet, which is over 60% of the world's population.", "The QWERTY keyboard layout was designed to slow typists down to prevent typewriter jams.", "The first gigabyte hard drive, released in 1980, weighed over 500 pounds and cost $40,000.", "There are over 1.9 billion websites, but only about 200 million are active.", "The average person blinks about 20 times a minute, but only 7 times a minute when using a computer." ],
+        css: { label: 'block text-sm font-medium text-gray-700 mb-1 dark:text-slate-300', input: 'w-full p-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition dark:bg-slate-700/50 dark:border-slate-600 dark:text-white', button: 'w-full p-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold rounded-lg shadow-md hover:shadow-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-1', buttonGray: 'w-full p-3 bg-gradient-to-r from-gray-500 to-gray-600 text-white font-bold rounded-lg shadow-md hover:shadow-lg hover:from-gray-600 hover:to-gray-700 transition-all duration-300 transform hover:-translate-y-1', inputReadonly: 'w-full p-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition bg-gray-100 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-300', resultContainer: 'text-center p-6 bg-gray-50 border-2 border-dashed border-gray-200 rounded-lg mt-4 hidden dark:bg-slate-800/50 dark:border-slate-700' },
+        elements: {},
+        
+        init: function() {
+            if (typeof lucide === 'undefined') { setTimeout(this.init.bind(this), 50); return; }
+            this.elements = {
+                toolGrid: document.getElementById('tool-grid'),
+                featuredGrid: document.getElementById('featured-grid'),
+                searchInput: document.getElementById('search-input'),
+                noResults: document.getElementById('no-results'),
+                gridWrapper: document.getElementById('grid-wrapper'),
+                toolViewerWrapper: document.getElementById('tool-viewer-wrapper'),
+                toolViewerTitle: document.getElementById('tool-viewer-title'),
+                toolViewerContent: document.getElementById('tool-viewer-content'),
+                closeToolViewerBtn: document.getElementById('close-tool-viewer'),
+                mobileMenuButton: document.getElementById('mobile-menu-button'),
+                mobileMenu: document.getElementById('mobile-menu'),
+                darkModeToggle: document.getElementById('dark-mode-toggle'),
+                factText: document.getElementById('fact-text'),
+                categoryFilters: document.getElementById('category-filters'),
+            };
 
-            const toolGrid = document.getElementById('tool-grid');
-            const searchInput = document.getElementById('search-input');
-            const noResults = document.getElementById('no-results');
+            const debouncedSearch = this.helpers.debounce(this.filterToolsBySearch.bind(this), 300);
+            this.elements.searchInput.addEventListener('input', debouncedSearch);
 
-            // --- Layout & Modal Elements ---
-            const aboutModal = document.getElementById('about-modal');
-            const gridWrapper = document.getElementById('grid-wrapper');
-            const toolViewerWrapper = document.getElementById('tool-viewer-wrapper');
-            const toolViewerTitle = document.getElementById('tool-viewer-title');
-            const toolViewerContent = document.getElementById('tool-viewer-content');
-            const closeToolViewerBtn = document.getElementById('close-tool-viewer');
-
-            const openAboutLinks = [
-                document.getElementById('about-link'), 
-                document.getElementById('about-link-mobile'),
-                document.getElementById('about-link-footer')
-            ];
-            const closeAboutModal = document.getElementById('close-about-modal');
-            const internalLinkAbout = document.getElementById('internal-link-about');
-
-            function renderTools(tools) {
-                toolGrid.innerHTML = '';
-                if (tools.length === 0) {
-                    noResults.classList.remove('hidden');
-                } else {
-                    noResults.classList.add('hidden');
-                    tools.forEach(tool => {
-                        const card = document.createElement('div');
-                        card.className = 'tool-card relative rounded-2xl shadow-md cursor-pointer flex flex-col items-center justify-center text-center p-6';
-                        card.dataset.toolTitle = tool.title;
-                        const externalBadge = tool.type === 'external' ? `<span class="absolute top-3 right-3 text-xs bg-gray-200 text-gray-600 px-2 py-1 rounded-full flex items-center gap-1">External <i data-lucide="arrow-up-right" class="w-3 h-3"></i></span>` : '';
-                        
-                        card.innerHTML = `
-                            ${externalBadge}
-                            <div class="text-6xl mb-4">${tool.icon}</div>
-                            <h3 class="text-lg font-bold text-[var(--secondary-color)] mb-2 flex-grow">${tool.title}</h3>
-                            <p class="text-gray-500 text-sm mb-4">${tool.description}</p>
-                            <span class="bg-blue-100 text-[var(--primary-color)] text-xs font-semibold px-2.5 py-1 rounded-full">${tool.category}</span>
-                        `;
-                        card.addEventListener('click', () => openTool(tool, card));
-                        toolGrid.appendChild(card);
-                    });
-                     lucide.createIcons();
-                }
-            }
-            
-            function filterTools() {
-                const query = searchInput.value.toLowerCase();
-                const filteredTools = toolsData.filter(tool => 
-                    tool.title.toLowerCase().includes(query) ||
-                    tool.description.toLowerCase().includes(query) ||
-                    tool.category.toLowerCase().includes(query)
-                );
-                renderTools(filteredTools);
-                 // If a tool is open, close it on search to avoid confusion
-                if (!toolViewerWrapper.classList.contains('hidden')) {
-                    closeToolViewer();
-                }
-            }
-
-            function openModal(modal) {
-                modal.classList.remove('hidden');
-                document.body.style.overflow = 'hidden';
-                setTimeout(() => {
-                    modal.classList.remove('opacity-0');
-                    modal.querySelector('.modal-content').classList.remove('scale-95', 'opacity-0');
-                }, 10);
-            }
-
-            function closeModal(modal) {
-                modal.classList.add('opacity-0');
-                modal.querySelector('.modal-content').classList.add('scale-95', 'opacity-0');
-                setTimeout(() => {
-                    modal.classList.add('hidden');
-                    if (document.querySelectorAll('.modal-backdrop:not(.hidden)').length === 0) {
-                        document.body.style.overflow = '';
-                    }
-                }, 300);
-            }
-            
-            function removeActiveCardState() {
-                document.querySelectorAll('.tool-card.active').forEach(c => c.classList.remove('active'));
-            }
-
-            function openTool(tool, cardElement) {
-                if (tool.type === 'external') {
-                    window.open(tool.url, '_blank', 'noopener,noreferrer');
-                    return;
-                }
-                
-                // If the same tool is clicked, do nothing. If a different tool is clicked, just update content.
-                const isAlreadyOpen = !toolViewerWrapper.classList.contains('hidden');
-                const isSameTool = cardElement.classList.contains('active');
-
-                if (isAlreadyOpen && isSameTool) {
-                    closeToolViewer();
-                    return;
-                }
-
-                removeActiveCardState();
-                cardElement.classList.add('active');
-
-                toolViewerTitle.textContent = tool.title;
-                renderInternalTool(tool);
-
-                if (!isAlreadyOpen) {
-                    gridWrapper.classList.remove('lg:w-full');
-                    gridWrapper.classList.add('lg:w-3/5');
-                    toolViewerWrapper.classList.remove('hidden');
-                }
-                
-                // On mobile, scroll to the viewer
-                if (window.innerWidth < 1024) {
-                    setTimeout(() => {
-                        toolViewerWrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }, 100);
-                }
-            }
-            
-            function closeToolViewer() {
-                gridWrapper.classList.remove('lg:w-3/5');
-                gridWrapper.classList.add('lg:w-full');
-                toolViewerWrapper.classList.add('hidden');
-                removeActiveCardState();
-            }
-
-            function renderInternalTool(tool) {
-                toolViewerContent.innerHTML = ''; // Clear previous tool
-                const toolFunctions = {
-                    'BMI Calculator': getBmiCalculator, 'Password Generator': getPasswordGenerator, 'QR Code Generator': getQrCodeGenerator,
-                    'Word & Character Counter': getWordCounter, 'Age Calculator': getAgeCalculator, 'Lorem Ipsum Generator': getLoremIpsumGenerator,
-                    'Gradient Generator': getGradientGenerator, 'Aspect Ratio Calculator': getAspectRatioCalculator, 'What Is My IP': getIpFinder,
-                    'Random Name Picker': getRandomNamePicker, 'Unit Converter': getUnitConverter, 'Pomodoro Timer': getPomodoroTimer,
-                    'Base64 Encoder/Decoder': getBase64Converter, 'Mortgage Calculator': getMortgageCalculator,
-                };
-
-                if (toolFunctions[tool.title]) {
-                    const { html, logic } = toolFunctions[tool.title]();
-                    toolViewerContent.innerHTML = html;
-                    logic();
-                } else {
-                    toolViewerContent.innerHTML = `<p class="text-center text-gray-500">This tool is currently under construction.</p>`;
-                }
-            }
-            
-            // --- Individual Tool Implementations ---
-            function getBmiCalculator() {
-                const html = `<div class="space-y-4 max-w-md mx-auto"><div><label class="tool-label">Height (cm)</label><input type="number" id="bmi-height" class="tool-input" placeholder="e.g., 175"></div><div><label class="tool-label">Weight (kg)</label><input type="number" id="bmi-weight" class="tool-input" placeholder="e.g., 70"></div><button id="bmi-calculate" class="tool-button">Calculate BMI</button><div id="bmi-result" class="result-container"></div></div>`;
-                const logic = () => {
-                    document.getElementById('bmi-calculate').addEventListener('click', () => {
-                        const height = parseFloat(document.getElementById('bmi-height').value);
-                        const weight = parseFloat(document.getElementById('bmi-weight').value);
-                        const resultEl = document.getElementById('bmi-result');
-                        if (height > 0 && weight > 0) {
-                            const bmi = (weight / ((height / 100) ** 2)).toFixed(2);
-                            let category = '';
-                            if (bmi < 18.5) category = 'Underweight';
-                            else if (bmi < 24.9) category = 'Normal weight';
-                            else if (bmi < 29.9) category = 'Overweight';
-                            else category = 'Obesity';
-                            resultEl.innerHTML = `<div class="text-gray-500">Your BMI</div><div class="text-3xl font-bold my-2 text-blue-600">${bmi}</div><div class="font-semibold text-gray-700">${category}</div>`;
-                            resultEl.classList.add('show');
-                        } else {
-                            resultEl.innerHTML = `Please enter valid height and weight.`;
-                            resultEl.classList.add('show');
-                        }
-                    });
-                };
-                return { html, logic };
-            }
-
-            function getPasswordGenerator() {
-                const html = `<div class="space-y-4 max-w-md mx-auto"><div><label class="tool-label">Length: <span id="pw-length-val">16</span></label><input type="range" id="pw-length" min="8" max="64" value="16" class="w-full"></div><div class="grid grid-cols-2 gap-4"><label class="flex items-center"><input type="checkbox" id="pw-upper" class="mr-2" checked> Uppercase</label><label class="flex items-center"><input type="checkbox" id="pw-lower" class="mr-2" checked> Lowercase</label><label class="flex items-center"><input type="checkbox" id="pw-numbers" class="mr-2" checked> Numbers</label><label class="flex items-center"><input type="checkbox" id="pw-symbols" class="mr-2"> Symbols</label></div><button id="pw-generate" class="tool-button">Generate Password</button><div class="relative mt-4"><input type="text" id="pw-result" class="tool-input bg-gray-100 font-mono" readonly placeholder="Your new password appears here..."><button id="pw-copy" class="absolute top-1/2 right-3 -translate-y-1/2 text-gray-500 hover:text-blue-500 p-2 rounded-md hover:bg-gray-100 transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg></button></div></div>`;
-                const logic = () => {
-                    const lengthEl = document.getElementById('pw-length'),
-                        lengthValEl = document.getElementById('pw-length-val'),
-                        resultEl = document.getElementById('pw-result'),
-                        upperEl = document.getElementById('pw-upper'),
-                        lowerEl = document.getElementById('pw-lower'),
-                        numbersEl = document.getElementById('pw-numbers'),
-                        symbolsEl = document.getElementById('pw-symbols');
-                    const randomFunc = {
-                        lower: () => String.fromCharCode(Math.floor(Math.random() * 26) + 97),
-                        upper: () => String.fromCharCode(Math.floor(Math.random() * 26) + 65),
-                        numbers: () => String.fromCharCode(Math.floor(Math.random() * 10) + 48),
-                        symbols: () => '!@#$%^&*(){}[]=<>/,.'.charAt(Math.floor(Math.random() * 20)),
-                    };
-                    lengthEl.addEventListener('input', e => lengthValEl.textContent = e.target.value);
-                    document.getElementById('pw-generate').addEventListener('click', () => {
-                        resultEl.value = generatePassword(+lengthEl.value, upperEl.checked, lowerEl.checked, numbersEl.checked, symbolsEl.checked);
-                    });
-                    document.getElementById('pw-copy').addEventListener('click', () => {
-                        if (!resultEl.value) return;
-                        resultEl.select();
-                        document.execCommand('copy');
-                        alert('Password copied to clipboard!');
-                    });
-
-                    function generatePassword(length, upper, lower, numbers, symbols) {
-                        let generatedPassword = '';
-                        const typesCount = upper + lower + numbers + symbols;
-                        if (typesCount === 0) return '';
-                        const typesArr = [{ upper }, { lower }, { numbers }, { symbols }].filter(item => Object.values(item)[0]);
-                        for (let i = 0; i < length; i += typesCount) {
-                            typesArr.forEach(type => {
-                                const funcName = Object.keys(type)[0];
-                                generatedPassword += randomFunc[funcName]();
-                            });
-                        }
-                        return generatedPassword.slice(0, length).split('').sort(() => Math.random() - 0.5).join('');
-                    }
-                };
-                return { html, logic };
-            }
-
-            function getQrCodeGenerator() {
-                const html = `<div class="space-y-4 text-center max-w-md mx-auto"><label class="tool-label text-left">Enter text or URL</label><input type="text" id="qr-text" class="tool-input" placeholder="https://example.com"><button id="qr-generate" class="tool-button">Generate QR Code</button><div id="qr-code-container" class="result-container p-4">Your QR code will appear here.</div></div>`;
-                const logic = () => {
-                    document.getElementById('qr-generate').addEventListener('click', () => {
-                        const text = document.getElementById('qr-text').value;
-                        const qrCodeContainer = document.getElementById('qr-code-container');
-                        qrCodeContainer.innerHTML = '';
-                        if (text) {
-                            try {
-                                const typeNumber = 4;
-                                const errorCorrectionLevel = 'L';
-                                const qr = qrcode(typeNumber, errorCorrectionLevel);
-                                qr.addData(text);
-                                qr.make();
-                                qrCodeContainer.innerHTML = qr.createImgTag(5, 5);
-                                qrCodeContainer.classList.add('show');
-                            } catch (e) {
-                                qrCodeContainer.innerHTML = 'Error generating QR Code.';
-                                qrCodeContainer.classList.add('show');
-                                console.error(e);
-                            }
-                        } else {
-                            qrCodeContainer.innerHTML = 'Please enter some text or a URL.';
-                            qrCodeContainer.classList.add('show');
-                        }
-                    });
-                };
-                return { html, logic };
-            }
-
-            function getWordCounter() {
-                const html = `<div class="space-y-4 h-full flex flex-col"><textarea id="wc-text" class="tool-input flex-grow" placeholder="Paste your text here..."></textarea><button id="wc-count" class="tool-button">Count Words & Characters</button><div id="wc-result" class="result-container"></div></div>`;
-                const logic = () => {
-                    document.getElementById('wc-count').addEventListener('click', () => {
-                        const text = document.getElementById('wc-text').value;
-                        const words = text.match(/\b\w+\b/g)?.length || 0;
-                        const chars = text.length;
-                        const resultEl = document.getElementById('wc-result');
-                        resultEl.innerHTML = `<div class="flex justify-around"><div><div class="text-gray-500">Words</div><div class="text-3xl font-bold text-blue-600">${words}</div></div><div><div class="text-gray-500">Characters</div><div class="text-3xl font-bold text-blue-600">${chars}</div></div></div>`;
-                        resultEl.classList.add('show');
-                    });
-                };
-                return { html, logic };
-            }
-
-            function getAgeCalculator() {
-                const html = `<div class="space-y-4 max-w-md mx-auto"><label class="tool-label">Enter your date of birth</label><input type="date" id="age-dob" class="tool-input"><button id="age-calculate" class="tool-button">Calculate Age</button><div id="age-result" class="result-container"></div></div>`;
-                const logic = () => {
-                    document.getElementById('age-calculate').addEventListener('click', () => {
-                        const dobString = document.getElementById('age-dob').value;
-                        const resultEl = document.getElementById('age-result');
-                        if (!dobString) {
-                            resultEl.textContent = 'Please select a date.';
-                            resultEl.classList.add('show');
-                            return;
-                        }
-                        const dob = new Date(dobString);
-                        const today = new Date();
-                        let ageYears = today.getFullYear() - dob.getFullYear();
-                        let ageMonths = today.getMonth() - dob.getMonth();
-                        let ageDays = today.getDate() - dob.getDate();
-                        if (ageDays < 0) {
-                            ageMonths--;
-                            ageDays += new Date(today.getFullYear(), today.getMonth(), 0).getDate();
-                        }
-                        if (ageMonths < 0) {
-                            ageYears--;
-                            ageMonths += 12;
-                        }
-                        resultEl.innerHTML = `<div class="text-gray-500">You are</div><div class="text-2xl font-bold my-2 text-blue-600">${ageYears} years, ${ageMonths} months, and ${ageDays} days old.</div>`;
-                        resultEl.classList.add('show');
-                    });
-                };
-                return { html, logic };
-            }
-
-            function getLoremIpsumGenerator() {
-                const html = `<div class="space-y-4 max-w-lg mx-auto"><div><label class="tool-label">Number of Paragraphs</label><input type="number" id="lorem-paragraphs" class="tool-input" value="3" min="1" max="50"></div><button id="lorem-generate" class="tool-button">Generate Text</button><textarea id="lorem-result" class="tool-input bg-gray-100 h-64 mt-4" readonly></textarea></div>`;
-                const logic = () => {
-                    const loremText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-                    const generate = () => {
-                        const paragraphs = document.getElementById('lorem-paragraphs').value;
-                        let result = '';
-                        for (let i = 0; i < paragraphs; i++) {
-                            result += loremText + '\n\n';
-                        }
-                        document.getElementById('lorem-result').value = result.trim();
-                    };
-                    document.getElementById('lorem-generate').addEventListener('click', generate);
-                    generate();
-                };
-                return { html, logic };
-            }
-
-            function getGradientGenerator() {
-                const html = `<div class="space-y-6"><div id="grad-preview" class="w-full h-48 rounded-lg border-4 border-white shadow-inner"></div><div class="grid grid-cols-1 md:grid-cols-2 gap-4"><div><label class="tool-label">Color 1</label><input type="color" id="grad-color1" class="tool-input h-12" value="#3b82f6"></div><div><label class="tool-label">Color 2</label><input type="color" id="grad-color2" class="tool-input h-12" value="#ec4899"></div><div><label class="tool-label">Angle (<span id="grad-angle-val">90</span>°)</label><input type="range" id="grad-angle" class="w-full" min="0" max="360" value="90"></div></div><label class="tool-label">CSS Code</label><textarea id="grad-result" class="tool-input bg-gray-100 font-mono" readonly></textarea></div>`;
-                const logic = () => {
-                    const color1El = document.getElementById('grad-color1'),
-                        color2El = document.getElementById('grad-color2'),
-                        angleEl = document.getElementById('grad-angle'),
-                        angleValEl = document.getElementById('grad-angle-val'),
-                        previewEl = document.getElementById('grad-preview'),
-                        resultEl = document.getElementById('grad-result');
-                    const updateGradient = () => {
-                        const color1 = color1El.value,
-                            color2 = color2El.value,
-                            angle = angleEl.value;
-                        angleValEl.textContent = angle;
-                        const gradient = `linear-gradient(${angle}deg, ${color1}, ${color2})`;
-                        previewEl.style.background = gradient;
-                        resultEl.value = `background: ${gradient};`;
-                    };
-                    color1El.addEventListener('input', updateGradient);
-                    color2El.addEventListener('input', updateGradient);
-                    angleEl.addEventListener('input', updateGradient);
-                    updateGradient();
-                };
-                return { html, logic };
-            }
-
-            function getAspectRatioCalculator() {
-                const html = `<div class="space-y-4 max-w-md mx-auto"><div class="grid grid-cols-2 gap-4"><div><label class="tool-label">Original Width</label><input type="number" id="ar-ow" class="tool-input" placeholder="1920"></div><div><label class="tool-label">Original Height</label><input type="number" id="ar-oh" class="tool-input" placeholder="1080"></div></div><div class="grid grid-cols-2 gap-4"><div><label class="tool-label">New Width</label><input type="number" id="ar-nw" class="tool-input" placeholder="e.g., 1280"></div><div><label class="tool-label">New Height</label><input type="number" id="ar-nh" class="tool-input bg-gray-100" placeholder="Result" readonly></div></div><div id="ar-result" class="result-container">Aspect Ratio: -:-</div></div>`;
-                const logic = () => {
-                    const ow = document.getElementById('ar-ow'),
-                        oh = document.getElementById('ar-oh'),
-                        nw = document.getElementById('ar-nw'),
-                        nh = document.getElementById('ar-nh'),
-                        resultEl = document.getElementById('ar-result');
-
-                    function calculate() {
-                        const originalWidth = parseFloat(ow.value);
-                        const originalHeight = parseFloat(oh.value);
-                        if (!originalWidth || !originalHeight) {
-                            resultEl.textContent = 'Aspect Ratio: -:-';
-                            nh.value = '';
-                            return;
-                        };
-                        const gcd = (a, b) => b === 0 ? a : gcd(b, a % b);
-                        const ratioGcd = gcd(originalWidth, originalHeight);
-                        resultEl.innerHTML = `Aspect Ratio: <strong class="text-blue-600">${originalWidth/ratioGcd}:${originalHeight/ratioGcd}</strong>`;
-                        resultEl.classList.add('show');
-                        const newWidth = parseFloat(nw.value);
-                        if (newWidth) {
-                            nh.value = Math.round((newWidth / originalWidth) * originalHeight);
-                        } else {
-                            nh.value = '';
-                        }
-                    }
-                    ow.addEventListener('input', calculate);
-                    oh.addEventListener('input', calculate);
-                    nw.addEventListener('input', calculate);
-                };
-                return { html, logic };
-            }
-
-            function getIpFinder() {
-                const html = `<div class="text-center"><button id="ip-find" class="tool-button max-w-xs mx-auto">Find My IP Address</button><div id="ip-result" class="result-container"></div></div>`;
-                const logic = () => {
-                    document.getElementById('ip-find').addEventListener('click', () => {
-                        const resultEl = document.getElementById('ip-result');
-                        resultEl.textContent = 'Fetching...';
-                        resultEl.classList.add('show');
-                        fetch('https://api.ipify.org?format=json').then(response => response.json()).then(data => {
-                            resultEl.innerHTML = `<div class="text-gray-500">Your Public IP is</div><div class="text-3xl font-bold my-2 text-blue-600 font-mono">${data.ip}</div>`;
-                        }).catch(error => {
-                            resultEl.textContent = 'Could not fetch IP.';
-                            console.error('Error fetching IP:', error);
-                        });
-                    });
-                };
-                return { html, logic };
-            }
-
-            function getRandomNamePicker() {
-                const html = `<div class="space-y-4"><label class="tool-label">Enter names (one per line)</label><textarea id="rnp-names" class="tool-input h-48" placeholder="Alice\nBob\nCharlie"></textarea><button id="rnp-pick" class="tool-button">Pick a Winner</button><div id="rnp-result" class="result-container"></div></div>`;
-                const logic = () => {
-                    document.getElementById('rnp-pick').addEventListener('click', () => {
-                        const namesText = document.getElementById('rnp-names').value;
-                        const resultEl = document.getElementById('rnp-result');
-                        const names = namesText.split('\n').map(n => n.trim()).filter(n => n);
-                        if (names.length > 0) {
-                            const winner = names[Math.floor(Math.random() * names.length)];
-                            resultEl.innerHTML = `<div class="text-gray-500">The winner is...</div><div class="text-4xl font-bold my-3 text-green-600">🎉 ${winner} 🎉</div>`;
-                            resultEl.classList.add('show');
-                        } else {
-                            resultEl.textContent = 'Please enter some names.';
-                            resultEl.classList.add('show');
-                        }
-                    });
-                };
-                return { html, logic };
-            }
-
-            function getUnitConverter() {
-                const html = `<div class="space-y-4 max-w-lg mx-auto"><div><label class="tool-label">Conversion Type</label><select id="uc-type" class="tool-input"><option value="length">Length</option><option value="weight">Weight</option><option value="temperature">Temperature</option></select></div><div class="flex items-center space-x-4"><div class="w-1/2"><label class="tool-label">From</label><input type="number" id="uc-input1" class="tool-input" value="1"><select id="uc-unit1" class="tool-input mt-2"></select></div><div class="text-2xl font-bold pt-8">=</div><div class="w-1/2"><label class="tool-label">To</label><input type="number" id="uc-input2" class="tool-input bg-gray-100" readonly><select id="uc-unit2" class="tool-input mt-2"></select></div></div></div>`;
-                const logic = () => {
-                    const typeSelect = document.getElementById('uc-type'),
-                        input1 = document.getElementById('uc-input1'),
-                        input2 = document.getElementById('uc-input2'),
-                        unit1Select = document.getElementById('uc-unit1'),
-                        unit2Select = document.getElementById('uc-unit2');
-                    const units = {
-                        length: { units: { m: 'Meter', km: 'Kilometer', mi: 'Mile', ft: 'Foot' }, conversions: { m: 1, km: 1000, mi: 1609.34, ft: 0.3048 } },
-                        weight: { units: { kg: 'Kilogram', g: 'Gram', lb: 'Pound', oz: 'Ounce' }, conversions: { kg: 1, g: 0.001, lb: 0.453592, oz: 0.0283495 } },
-                        temperature: { units: { c: 'Celsius', f: 'Fahrenheit', k: 'Kelvin' } }
-                    };
-
-                    function populateUnits() {
-                        const selectedType = typeSelect.value,
-                            unitData = units[selectedType].units;
-                        unit1Select.innerHTML = '';
-                        unit2Select.innerHTML = '';
-                        for (const key in unitData) {
-                            unit1Select.innerHTML += `<option value="${key}">${unitData[key]}</option>`;
-                            unit2Select.innerHTML += `<option value="${key}">${unitData[key]}</option>`;
-                        }
-                        unit2Select.value = Object.keys(unitData)[1] || Object.keys(unitData)[0];
-                        convert();
-                    }
-
-                    function convert() {
-                        const type = typeSelect.value,
-                            val1 = parseFloat(input1.value),
-                            unit1 = unit1Select.value,
-                            unit2 = unit2Select.value;
-                        if (isNaN(val1)) {
-                            input2.value = '';
-                            return;
-                        }
-                        let result;
-                        if (type === 'temperature') {
-                            if (unit1 === unit2) result = val1;
-                            else if (unit1 === 'c' && unit2 === 'f') result = val1 * 9 / 5 + 32;
-                            else if (unit1 === 'f' && unit2 === 'c') result = (val1 - 32) * 5 / 9;
-                            else if (unit1 === 'c' && unit2 === 'k') result = val1 + 273.15;
-                            else if (unit1 === 'k' && unit2 === 'c') result = val1 - 273.15;
-                            else if (unit1 === 'f' && unit2 === 'k') result = (val1 - 32) * 5 / 9 + 273.15;
-                            else if (unit1 === 'k' && unit2 === 'f') result = (val1 - 273.15) * 9 / 5 + 32;
-                        } else {
-                            const valueInBase = val1 * units[type].conversions[unit1];
-                            result = valueInBase / units[type].conversions[unit2];
-                        }
-                        input2.value = parseFloat(result.toFixed(4));
-                    }
-                    typeSelect.addEventListener('change', populateUnits);
-                    input1.addEventListener('input', convert);
-                    unit1Select.addEventListener('change', convert);
-                    unit2Select.addEventListener('change', convert);
-                    populateUnits();
-                };
-                return { html, logic };
-            }
-
-            function getBase64Converter() {
-                const html = `<div class="space-y-4 h-full flex flex-col"><label class="tool-label">Input</label><textarea id="b64-input" class="tool-input flex-grow font-mono" placeholder="Enter text to encode or Base64 to decode..."></textarea><div class="grid grid-cols-2 gap-4"><button id="b64-encode" class="tool-button">Encode (to Base64)</button><button id="b64-decode" class="tool-button bg-gray-500 hover:bg-gray-600 from-gray-500 to-gray-600 hover:from-gray-600 hover:to-gray-700">Decode (from Base64)</button></div><label class="tool-label">Output</label><textarea id="b64-output" class="tool-input flex-grow bg-gray-100 font-mono" readonly></textarea></div>`;
-                const logic = () => {
-                    document.getElementById('b64-encode').addEventListener('click', () => {
-                        const input = document.getElementById('b64-input').value;
-                        try {
-                            document.getElementById('b64-output').value = btoa(unescape(encodeURIComponent(input)));
-                        } catch (e) {
-                            document.getElementById('b64-output').value = 'Error: Could not encode input.';
-                        }
-                    });
-                    document.getElementById('b64-decode').addEventListener('click', () => {
-                        const input = document.getElementById('b64-input').value;
-                        try {
-                            document.getElementById('b64-output').value = decodeURIComponent(escape(atob(input)));
-                        } catch (e) {
-                            document.getElementById('b64-output').value = 'Error: Invalid Base64 string.';
-                        }
-                    });
-                };
-                return { html, logic };
-            }
-
-            function getPomodoroTimer() {
-                const html = `<div class="text-center max-w-sm mx-auto"><div class="space-x-2 mb-4"><button id="pomo-mode-pomodoro" class="px-4 py-2 rounded-lg bg-blue-500 text-white transition">Pomodoro</button><button id="pomo-mode-short" class="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 transition">Short Break</button><button id="pomo-mode-long" class="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 transition">Long Break</button></div><div id="pomo-time" class="text-8xl font-bold my-8">25:00</div><div class="space-x-4"><button id="pomo-start" class="tool-button inline-block w-auto px-10">Start</button><button id="pomo-reset" class="tool-button bg-gray-500 hover:bg-gray-600 from-gray-500 to-gray-600 hover:from-gray-600 hover:to-gray-700 inline-block w-auto px-10">Reset</button></div></div>`;
-                const logic = () => {
-                    let interval, timeLeft;
-                    const modes = { pomodoro: 1500, short: 300, long: 900 };
-                    let currentMode = 'pomodoro';
-                    const timeDisplay = document.getElementById('pomo-time'),
-                        startBtn = document.getElementById('pomo-start'),
-                        resetBtn = document.getElementById('pomo-reset'),
-                        modeBtns = {
-                            pomodoro: document.getElementById('pomo-mode-pomodoro'),
-                            short: document.getElementById('pomo-mode-short'),
-                            long: document.getElementById('pomo-mode-long')
-                        };
-
-                    function updateDisplay() {
-                        const minutes = Math.floor(timeLeft / 60);
-                        const seconds = timeLeft % 60;
-                        timeDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-                    }
-
-                    function resetTimer() {
-                        clearInterval(interval);
-                        interval = null;
-                        timeLeft = modes[currentMode];
-                        updateDisplay();
-                        startBtn.textContent = 'Start';
-                    }
-
-                    function startTimer() {
-                        if (interval) {
-                            clearInterval(interval);
-                            interval = null;
-                            startBtn.textContent = 'Start';
-                        } else {
-                            startBtn.textContent = 'Pause';
-                            interval = setInterval(() => {
-                                timeLeft--;
-                                if (timeLeft < 0) {
-                                    resetTimer();
-                                    alert('Time is up!');
-                                    return;
-                                }
-                                updateDisplay();
-                            }, 1000);
-                        }
-                    }
-
-                    function switchMode(newMode) {
-                        currentMode = newMode;
-                        Object.values(modeBtns).forEach(btn => {
-                            btn.classList.add('bg-gray-200', 'hover:bg-gray-300');
-                            btn.classList.remove('bg-blue-500', 'text-white');
-                        });
-                        modeBtns[newMode].classList.remove('bg-gray-200', 'hover:bg-gray-300');
-                        modeBtns[newMode].classList.add('bg-blue-500', 'text-white');
-                        resetTimer();
-                    }
-                    startBtn.addEventListener('click', startTimer);
-                    resetBtn.addEventListener('click', resetTimer);
-                    modeBtns.pomodoro.addEventListener('click', () => switchMode('pomodoro'));
-                    modeBtns.short.addEventListener('click', () => switchMode('short'));
-                    modeBtns.long.addEventListener('click', () => switchMode('long'));
-                    resetTimer();
-                };
-                return { html, logic };
-            }
-
-            function getMortgageCalculator() {
-                const html = `<div class="space-y-4 max-w-md mx-auto"><div><label class="tool-label">Loan Amount ($)</label><input type="number" id="mc-amount" class="tool-input" placeholder="e.g., 300000"></div><div><label class="tool-label">Interest Rate (%)</label><input type="number" id="mc-rate" class="tool-input" step="0.01" placeholder="e.g., 5.5"></div><div><label class="tool-label">Loan Term (Years)</label><input type="number" id="mc-term" class="tool-input" placeholder="e.g., 30"></div><button id="mc-calculate" class="tool-button">Calculate</button><div id="mc-result" class="result-container"></div></div>`;
-                const logic = () => {
-                    document.getElementById('mc-calculate').addEventListener('click', () => {
-                        const principal = parseFloat(document.getElementById('mc-amount').value),
-                            annualRate = parseFloat(document.getElementById('mc-rate').value),
-                            years = parseFloat(document.getElementById('mc-term').value),
-                            resultEl = document.getElementById('mc-result');
-                        if (principal > 0 && annualRate > 0 && years > 0) {
-                            const monthlyRate = annualRate / 100 / 12;
-                            const numberOfPayments = years * 12;
-                            const monthlyPayment = principal * (monthlyRate * Math.pow(1 + monthlyRate, numberOfPayments)) / (Math.pow(1 + monthlyRate, numberOfPayments) - 1);
-                            const totalPayment = monthlyPayment * numberOfPayments;
-                            const totalInterest = totalPayment - principal;
-                            resultEl.innerHTML = `<div class="text-gray-500">Monthly Payment</div><div class="text-3xl font-bold my-2 text-blue-600">$${monthlyPayment.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}</div><div class="grid grid-cols-2 gap-4 text-sm mt-4"><div class="bg-gray-100 p-2 rounded"><div class="text-gray-500">Total Payment</div><div class="font-semibold">$${totalPayment.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}</div></div><div class="bg-gray-100 p-2 rounded"><div class="text-gray-500">Total Interest</div><div class="font-semibold">$${totalInterest.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}</div></div></div>`;
-                            resultEl.classList.add('show');
-                        } else {
-                            resultEl.innerHTML = `Please enter valid numbers in all fields.`;
-                            resultEl.classList.add('show');
-                        }
-                    });
-                };
-                return { html, logic };
-            }
-
-            // --- Modal & Viewer Setup & Event Listeners ---
-            openAboutLinks.forEach(link => link.addEventListener('click', (e) => { e.preventDefault(); openModal(aboutModal); }));
-            closeAboutModal.addEventListener('click', () => closeModal(aboutModal));
-            internalLinkAbout.addEventListener('click', () => closeModal(aboutModal));
-            closeToolViewerBtn.addEventListener('click', closeToolViewer);
-            
+            this.elements.closeToolViewerBtn.addEventListener('click', this.closeToolViewer.bind(this));
+            this.elements.mobileMenuButton.addEventListener('click', () => this.elements.mobileMenu.classList.toggle('hidden'));
+            this.elements.darkModeToggle.addEventListener('click', this.toggleDarkMode.bind(this));
             window.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape') {
-                    if (!toolViewerWrapper.classList.contains('hidden')) closeToolViewer();
-                    if (!aboutModal.classList.contains('hidden')) closeModal(aboutModal);
+                if (e.key === 'Escape' && !this.elements.toolViewerWrapper.classList.contains('hidden')) {
+                    this.closeToolViewer();
                 }
             });
+            this.loadDarkMode();
+            this.renderFeaturedTools();
+            this.renderCategoryFilters();
+            this.renderTools(this.toolsData, this.elements.toolGrid);
+            this.displayFunFact();
+            this.setupScrollAnimations();
+            this.helpers.renderIcons();
+        },
 
-            aboutModal.addEventListener('click', (e) => { if (e.target === aboutModal) closeModal(aboutModal); });
-            
-
-            // --- Mobile Menu ---
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-
-            // Initial render
-            renderTools(toolsData);
-            searchInput.addEventListener('input', filterTools);
-        });
+        renderTools: function(tools, container, isFeatured = false) {
+            if (!isFeatured) container.innerHTML = '';
+            if (tools.length === 0) {
+                this.elements.noResults.classList.remove('hidden');
+            } else {
+                if (!isFeatured) this.elements.noResults.classList.add('hidden');
+                tools.forEach(tool => {
+                    const card = document.createElement('div');
+                    card.className = `tool-card bg-white/50 dark:bg-slate-800/50 backdrop-blur-md relative rounded-2xl shadow-md cursor-pointer flex flex-col items-center justify-center text-center p-6`;
+                    if (!isFeatured) card.setAttribute('data-animate', '');
+                    card.dataset.toolTitle = tool.title;
+                    const externalBadge = tool.type === 'external' ? `<span class="absolute top-3 right-3 text-xs bg-gray-200 text-gray-600 dark:bg-slate-700 dark:text-slate-300 px-2 py-1 rounded-full flex items-center gap-1">External <i data-lucide="arrow-up-right" class="w-3 h-3"></i></span>` : '';
+                    card.innerHTML = `${externalBadge}<i data-lucide="${tool.icon}" class="w-12 h-12 mb-4 text-blue-500"></i><h3 class="text-lg font-bold text-slate-800 dark:text-slate-100 mb-2 flex-grow">${tool.title}</h3><p class="text-gray-500 dark:text-gray-400 text-sm mb-4">${tool.description}</p><span class="bg-blue-100 text-blue-600 dark:bg-blue-900/50 dark:text-blue-400 text-xs font-semibold px-2.5 py-1 rounded-full">${tool.category}</span>`;
+                    card.addEventListener('click', () => this.openTool(tool, card));
+                    container.appendChild(card);
+                });
+            }
+        },
+        renderFeaturedTools: function() { const featured = this.toolsData.filter(t => t.isFeatured); this.renderTools(featured, this.elements.featuredGrid, true); },
+        renderCategoryFilters: function() {
+            const categories = ['All', ...new Set(this.toolsData.map(t => t.category))];
+            this.elements.categoryFilters.innerHTML = categories.map(cat => `<button data-category="${cat}" class="px-4 py-2 text-sm font-semibold rounded-full transition-colors ${cat === 'All' ? 'bg-blue-500 text-white' : 'bg-gray-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-gray-300 dark:hover:bg-slate-600'}">${cat}</button>`).join('');
+            this.elements.categoryFilters.addEventListener('click', (e) => {
+                if (e.target.tagName === 'BUTTON') {
+                    const category = e.target.dataset.category;
+                    this.filterToolsByCategory(category);
+                    this.elements.categoryFilters.querySelectorAll('button').forEach(btn => { btn.classList.remove('bg-blue-500', 'text-white'); btn.classList.add('bg-gray-200', 'dark:bg-slate-700', 'text-slate-700', 'dark:text-slate-300', 'hover:bg-gray-300', 'dark:hover:bg-slate-600'); });
+                    e.target.classList.add('bg-blue-500', 'text-white');
+                    e.target.classList.remove('bg-gray-200', 'dark:bg-slate-700', 'text-slate-700', 'dark:text-slate-300', 'hover:bg-gray-300', 'dark:hover:bg-slate-600');
+                }
+            });
+        },
+        filterToolsByCategory: function(category) { const filtered = category === 'All' ? this.toolsData : this.toolsData.filter(t => t.category === category); this.renderTools(filtered, this.elements.toolGrid); this.helpers.renderIcons(); this.setupScrollAnimations(); this.elements.searchInput.value = ''; },
+        filterToolsBySearch: function() { const query = this.elements.searchInput.value.toLowerCase(); const filteredTools = this.toolsData.filter(tool => tool.title.toLowerCase().includes(query) || tool.description.toLowerCase().includes(query) || tool.category.toLowerCase().includes(query)); this.renderTools(filteredTools, this.elements.toolGrid); this.helpers.renderIcons(); this.setupScrollAnimations(); },
+        openTool: function(tool, cardElement) {
+            if (tool.type === 'external') { window.open(tool.url, '_blank', 'noopener,noreferrer'); return; }
+            const isAlreadyOpen = !this.elements.toolViewerWrapper.classList.contains('hidden');
+            const isSameTool = cardElement.classList.contains('active');
+            if (isAlreadyOpen && isSameTool) { this.closeToolViewer(); return; }
+            this.removeActiveCardState();
+            cardElement.classList.add('active');
+            this.elements.toolViewerTitle.textContent = tool.title;
+            this.renderInternalTool(tool);
+            if (!isAlreadyOpen) { this.elements.gridWrapper.classList.remove('lg:w-full'); this.elements.gridWrapper.classList.add('lg:w-3/5'); this.elements.toolViewerWrapper.classList.remove('hidden'); }
+            if (window.innerWidth < 1024) { setTimeout(() => { this.elements.toolViewerWrapper.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 100); }
+        },
+        removeActiveCardState: function() { document.querySelectorAll('.tool-card.active').forEach(c => c.classList.remove('active')); },
+        closeToolViewer: function() { this.elements.gridWrapper.classList.remove('lg:w-3/5'); this.elements.gridWrapper.classList.add('lg:w-full'); this.elements.toolViewerWrapper.classList.add('hidden'); this.removeActiveCardState(); },
+        renderInternalTool: function(tool) {
+            this.elements.toolViewerContent.innerHTML = '';
+            const toolFunctions = {
+                'BMI Calculator': this.tools.getBmiCalculator, 'Password Generator': this.tools.getPasswordGenerator, 'QR Code Generator': this.tools.getQrCodeGenerator, 'Word & Character Counter': this.tools.getWordCounter, 'Age Calculator': this.tools.getAgeCalculator, 'Lorem Ipsum Generator': this.tools.getLoremIpsumGenerator, 'Gradient Generator': this.tools.getGradientGenerator, 'Aspect Ratio Calculator': this.tools.getAspectRatioCalculator, 'What Is My IP': this.tools.getIpFinder, 'Random Name Picker': this.tools.getRandomNamePicker, 'Unit Converter': this.tools.getUnitConverter, 'Pomodoro Timer': this.tools.getPomodoroTimer, 'Base64 Encoder/Decoder': this.tools.getBase64Converter, 'Mortgage Calculator': this.tools.getMortgageCalculator,
+            };
+            if (toolFunctions[tool.title]) { const { html, logic } = toolFunctions[tool.title](); this.elements.toolViewerContent.innerHTML = html; logic(); this.helpers.renderIcons(); } else { this.elements.toolViewerContent.innerHTML = `<p class="text-center text-gray-500">This tool is currently under construction.</p>`; }
+        },
+        loadDarkMode: function() { if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) { document.documentElement.classList.add('dark'); } else { document.documentElement.classList.remove('dark'); } },
+        toggleDarkMode: function() { document.documentElement.classList.toggle('dark'); localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light'; },
+        displayFunFact: function() { const randomIndex = Math.floor(Math.random() * this.funFacts.length); this.elements.factText.textContent = this.funFacts[randomIndex]; },
+        setupScrollAnimations: function() { const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('in-view'); if (entry.target.id === 'stats') { this.animateCounters(); observer.unobserve(entry.target); } } }); }, { threshold: 0.1 }); document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el)); },
+        animateCounters: function() { document.querySelectorAll('[data-counter]').forEach(counter => { const target = +counter.getAttribute('data-counter'); const suffix = counter.innerText; counter.innerText = '0'; let current = 0; const updateCounter = () => { const increment = target / 100; current += increment; if (current < target) { counter.innerText = Math.ceil(current) + suffix; requestAnimationFrame(updateCounter); } else { counter.innerText = target + suffix; } }; requestAnimationFrame(updateCounter); }); },
+        helpers: {
+            debounce: function(func, delay) { let timeout; return function(...args) { clearTimeout(timeout); timeout = setTimeout(() => func.apply(this, args), delay); }; },
+            copyToClipboard: function(text, buttonElement) { if (!navigator.clipboard) { return; } navigator.clipboard.writeText(text).then(() => { const originalHtml = buttonElement.innerHTML; buttonElement.innerHTML = `<i data-lucide="check" class="w-5 h-5 mx-auto"></i><span class="sr-only">Copied!</span>`; App.helpers.renderIcons(); buttonElement.disabled = true; setTimeout(() => { buttonElement.innerHTML = originalHtml; buttonElement.disabled = false; App.helpers.renderIcons(); }, 2000); }); },
+            renderIcons: function() { if (typeof lucide !== 'undefined') { lucide.createIcons(); } }
+        },
+        tools: {
+            getBmiCalculator: function() { const html = `<div class="space-y-4 max-w-md mx-auto"><div><label class="${App.css.label}">Height (cm)</label><input type="number" id="bmi-height" class="${App.css.input}" placeholder="e.g., 175"></div><div><label class="${App.css.label}">Weight (kg)</label><input type="number" id="bmi-weight" class="${App.css.input}" placeholder="e.g., 70"></div><button id="bmi-calculate" class="${App.css.button}">Calculate BMI</button><div id="bmi-result" class="${App.css.resultContainer}"></div></div>`; const logic = () => { document.getElementById('bmi-calculate').addEventListener('click', () => { const height = parseFloat(document.getElementById('bmi-height').value); const weight = parseFloat(document.getElementById('bmi-weight').value); const resultEl = document.getElementById('bmi-result'); if (height > 0 && weight > 0) { const bmi = (weight / ((height / 100) ** 2)).toFixed(2); let category = ''; if (bmi < 18.5) category = 'Underweight'; else if (bmi < 24.9) category = 'Normal weight'; else if (bmi < 29.9) category = 'Overweight'; else category = 'Obesity'; resultEl.innerHTML = `<div class="text-gray-500 dark:text-gray-400">Your BMI</div><div class="text-3xl font-bold my-2 text-blue-600">${bmi}</div><div class="font-semibold text-gray-700 dark:text-slate-200">${category}</div>`; resultEl.classList.add('show'); } else { resultEl.innerHTML = `Please enter valid height and weight.`; resultEl.classList.add('show'); } }); }; return { html, logic }; },
+            getPasswordGenerator: function() { const html = `<div class="space-y-4 max-w-md mx-auto"><div><label class="${App.css.label}">Length: <span id="pw-length-val">16</span></label><input type="range" id="pw-length" min="8" max="64" value="16" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"></div><div class="grid grid-cols-2 gap-4"><label class="flex items-center ${App.css.label} font-normal"><input type="checkbox" id="pw-upper" class="mr-2 h-4 w-4 rounded text-blue-500 focus:ring-blue-500" checked> Uppercase</label><label class="flex items-center ${App.css.label} font-normal"><input type="checkbox" id="pw-lower" class="mr-2 h-4 w-4 rounded text-blue-500 focus:ring-blue-500" checked> Lowercase</label><label class="flex items-center ${App.css.label} font-normal"><input type="checkbox" id="pw-numbers" class="mr-2 h-4 w-4 rounded text-blue-500 focus:ring-blue-500" checked> Numbers</label><label class="flex items-center ${App.css.label} font-normal"><input type="checkbox" id="pw-symbols" class="mr-2 h-4 w-4 rounded text-blue-500 focus:ring-blue-500"> Symbols</label></div><button id="pw-generate" class="${App.css.button}">Generate Password</button><div class="relative mt-4"><input type="text" id="pw-result" class="${App.css.inputReadonly} font-mono" readonly placeholder="Your new password..."><button id="pw-copy" class="absolute top-1/2 right-2 -translate-y-1/2 text-gray-500 hover:text-blue-500 p-2 rounded-md hover:bg-gray-100 dark:hover:bg-slate-700 transition"><i data-lucide="clipboard" class="w-5 h-5"></i></button></div></div>`; const logic = () => { const lengthEl = document.getElementById('pw-length'), lengthValEl = document.getElementById('pw-length-val'), resultEl = document.getElementById('pw-result'), upperEl = document.getElementById('pw-upper'), lowerEl = document.getElementById('pw-lower'), numbersEl = document.getElementById('pw-numbers'), symbolsEl = document.getElementById('pw-symbols'), copyBtn = document.getElementById('pw-copy'); const randomFunc = { lower: () => String.fromCharCode(Math.floor(Math.random() * 26) + 97), upper: () => String.fromCharCode(Math.floor(Math.random() * 26) + 65), numbers: () => String.fromCharCode(Math.floor(Math.random() * 10) + 48), symbols: () => '!@#$%^&*(){}[]=<>/,.'.charAt(Math.floor(Math.random() * 20)), }; lengthEl.addEventListener('input', e => lengthValEl.textContent = e.target.value); document.getElementById('pw-generate').addEventListener('click', () => { resultEl.value = generatePassword(+lengthEl.value, upperEl.checked, lowerEl.checked, numbersEl.checked, symbolsEl.checked); }); copyBtn.addEventListener('click', () => { if (!resultEl.value) return; App.helpers.copyToClipboard(resultEl.value, copyBtn); }); function generatePassword(length, upper, lower, numbers, symbols) { let generatedPassword = ''; const typesCount = upper + lower + numbers + symbols; if (typesCount === 0) return ''; const typesArr = [{ upper }, { lower }, { numbers }, { symbols }].filter(item => Object.values(item)[0]); for (let i = 0; i < length; i += typesCount) { typesArr.forEach(type => { const funcName = Object.keys(type)[0]; generatedPassword += randomFunc[funcName](); }); } return generatedPassword.slice(0, length).split('').sort(() => Math.random() - 0.5).join(''); } }; return { html, logic }; },
+            getQrCodeGenerator: function() { const html = `<div class="space-y-4 text-center max-w-md mx-auto"><label class="${App.css.label} text-left">Enter text or URL</label><input type="text" id="qr-text" class="${App.css.input}" placeholder="https://example.com"><button id="qr-generate" class="${App.css.button}">Generate QR Code</button><div id="qr-code-container" class="${App.css.resultContainer} p-4 flex justify-center items-center">Your QR code will appear here.</div></div>`; const logic = () => { document.getElementById('qr-generate').addEventListener('click', () => { const text = document.getElementById('qr-text').value; const qrCodeContainer = document.getElementById('qr-code-container'); qrCodeContainer.innerHTML = ''; if (text) { try { const typeNumber = 4; const errorCorrectionLevel = 'L'; const qr = qrcode(typeNumber, errorCorrectionLevel); qr.addData(text); qr.make(); qrCodeContainer.innerHTML = qr.createImgTag(5, 5, "qr-code-img", "w-full h-auto max-w-[200px]"); qrCodeContainer.classList.add('show'); } catch (e) { qrCodeContainer.innerHTML = 'Error generating QR Code. Text may be too long.'; qrCodeContainer.classList.add('show'); console.error(e); } } else { qrCodeContainer.innerHTML = 'Please enter some text or a URL.'; qrCodeContainer.classList.add('show'); } }); }; return { html, logic }; },
+            getWordCounter: function() { const html = `<div class="space-y-4 h-full flex flex-col"><textarea id="wc-text" class="${App.css.input} flex-grow min-h-[200px]" placeholder="Paste your text here..."></textarea><div id="wc-result" class="${App.css.resultContainer}"></div></div>`; const logic = () => { const textEl = document.getElementById('wc-text'); const resultEl = document.getElementById('wc-result'); function count() { const text = textEl.value; const words = text.match(/\b\w+\b/g)?.length || 0; const chars = text.length; resultEl.innerHTML = `<div class="flex justify-around"><div><div class="text-gray-500 dark:text-gray-400">Words</div><div class="text-3xl font-bold text-blue-600">${words}</div></div><div><div class="text-gray-500 dark:text-gray-400">Characters</div><div class="text-3xl font-bold text-blue-600">${chars}</div></div></div>`; resultEl.classList.add('show'); } textEl.addEventListener('input', count); count(); }; return { html, logic }; },
+            getAgeCalculator: function() { const html = `<div class="space-y-4 max-w-md mx-auto"><label class="${App.css.label}">Enter your date of birth</label><input type="date" id="age-dob" class="${App.css.input}"><button id="age-calculate" class="${App.css.button}">Calculate Age</button><div id="age-result" class="${App.css.resultContainer}"></div></div>`; const logic = () => { document.getElementById('age-calculate').addEventListener('click', () => { const dobString = document.getElementById('age-dob').value; const resultEl = document.getElementById('age-result'); if (!dobString) { resultEl.textContent = 'Please select a date.'; resultEl.classList.add('show'); return; } const dob = new Date(dobString); const today = new Date(); let ageYears = today.getFullYear() - dob.getFullYear(); let ageMonths = today.getMonth() - dob.getMonth(); let ageDays = today.getDate() - dob.getDate(); if (ageDays < 0) { ageMonths--; ageDays += new Date(today.getFullYear(), today.getMonth(), 0).getDate(); } if (ageMonths < 0) { ageYears--; ageMonths += 12; } resultEl.innerHTML = `<div class="text-gray-500 dark:text-gray-400">You are</div><div class="text-2xl font-bold my-2 text-blue-600">${ageYears} years, ${ageMonths} months, and ${ageDays} days old.</div>`; resultEl.classList.add('show'); }); }; return { html, logic }; },
+            getLoremIpsumGenerator: function() { const html = `<div class="space-y-4 max-w-lg mx-auto"><div><label class="${App.css.label}">Number of Paragraphs</label><input type="number" id="lorem-paragraphs" class="${App.css.input}" value="3" min="1" max="50"></div><button id="lorem-generate" class="${App.css.button}">Generate Text</button><div class="relative"><textarea id="lorem-result" class="${App.css.inputReadonly} min-h-[200px] mt-4" readonly></textarea><button id="lorem-copy" class="absolute top-6 right-2 text-gray-500 hover:text-blue-500 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-slate-700 transition"><i data-lucide="clipboard" class="w-5 h-5"></i></button></div></div>`; const logic = () => { const loremText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."; const resultEl = document.getElementById('lorem-result'); const copyBtn = document.getElementById('lorem-copy'); const generate = () => { const paragraphs = document.getElementById('lorem-paragraphs').value; let result = ''; for (let i = 0; i < paragraphs; i++) { result += loremText + '\n\n'; } resultEl.value = result.trim(); }; document.getElementById('lorem-generate').addEventListener('click', generate); copyBtn.addEventListener('click', () => { if (resultEl.value) App.helpers.copyToClipboard(resultEl.value, copyBtn); }); generate(); }; return { html, logic }; },
+            getGradientGenerator: function() { const html = `<div class="space-y-6"><div id="grad-preview" class="w-full h-48 rounded-lg border-4 border-white shadow-inner dark:border-slate-700"></div><div class="grid grid-cols-1 md:grid-cols-2 gap-4"><div><label class="${App.css.label}">Color 1</label><input type="color" id="grad-color1" class="${App.css.input} h-12 p-1" value="#3b82f6"></div><div><label class="${App.css.label}">Color 2</label><input type="color" id="grad-color2" class="${App.css.input} h-12 p-1" value="#ec4899"></div><div><label class="${App.css.label}">Angle (<span id="grad-angle-val">90</span>°)</label><input type="range" id="grad-angle" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700" min="0" max="360" value="90"></div></div><div class="relative"><label class="${App.css.label}">CSS Code</label><textarea id="grad-result" class="${App.css.inputReadonly} font-mono" readonly></textarea><button id="grad-copy" class="absolute top-8 right-2 text-gray-500 hover:text-blue-500 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-slate-700 transition"><i data-lucide="clipboard" class="w-5 h-5"></i></button></div></div>`; const logic = () => { const color1El = document.getElementById('grad-color1'), color2El = document.getElementById('grad-color2'), angleEl = document.getElementById('grad-angle'), angleValEl = document.getElementById('grad-angle-val'), previewEl = document.getElementById('grad-preview'), resultEl = document.getElementById('grad-result'), copyBtn = document.getElementById('grad-copy'); const updateGradient = () => { const color1 = color1El.value, color2 = color2El.value, angle = angleEl.value; angleValEl.textContent = angle; const gradient = `linear-gradient(${angle}deg, ${color1}, ${color2})`; previewEl.style.background = gradient; resultEl.value = `background: ${gradient};`; }; color1El.addEventListener('input', updateGradient); color2El.addEventListener('input', updateGradient); angleEl.addEventListener('input', updateGradient); copyBtn.addEventListener('click', () => { if (resultEl.value) App.helpers.copyToClipboard(resultEl.value, copyBtn); }); updateGradient(); }; return { html, logic }; },
+            getAspectRatioCalculator: function() { const html = `<div class="space-y-4 max-w-md mx-auto"><div class="grid grid-cols-2 gap-4"><div><label class="${App.css.label}">Original Width</label><input type="number" id="ar-ow" class="${App.css.input}" placeholder="1920"></div><div><label class="${App.css.label}">Original Height</label><input type="number" id="ar-oh" class="${App.css.input}" placeholder="1080"></div></div><div class="grid grid-cols-2 gap-4"><div><label class="${App.css.label}">New Width</label><input type="number" id="ar-nw" class="${App.css.input}" placeholder="e.g., 1280"></div><div><label class="${App.css.label}">New Height</label><input type="number" id="ar-nh" class="${App.css.inputReadonly}" placeholder="Result" readonly></div></div><div id="ar-result" class="${App.css.resultContainer}">Aspect Ratio: -:-</div></div>`; const logic = () => { const ow = document.getElementById('ar-ow'), oh = document.getElementById('ar-oh'), nw = document.getElementById('ar-nw'), nh = document.getElementById('ar-nh'), resultEl = document.getElementById('ar-result'); function calculate() { const originalWidth = parseFloat(ow.value); const originalHeight = parseFloat(oh.value); if (!originalWidth || !originalHeight) { resultEl.textContent = 'Aspect Ratio: -:-'; nh.value = ''; return; }; const gcd = (a, b) => b === 0 ? a : gcd(b, a % b); const ratioGcd = gcd(originalWidth, originalHeight); resultEl.innerHTML = `Aspect Ratio: <strong class="text-blue-600">${originalWidth/ratioGcd}:${originalHeight/ratioGcd}</strong>`; resultEl.classList.add('show'); const newWidth = parseFloat(nw.value); if (newWidth) { nh.value = Math.round((newWidth / originalWidth) * originalHeight); } else { nh.value = ''; } } ow.addEventListener('input', calculate); oh.addEventListener('input', calculate); nw.addEventListener('input', calculate); }; return { html, logic }; },
+            getIpFinder: function() { const html = `<div class="text-center"><button id="ip-find" class="${App.css.button} max-w-xs mx-auto">Find My IP Address</button><div id="ip-result" class="${App.css.resultContainer}"></div></div>`; const logic = () => { document.getElementById('ip-find').addEventListener('click', () => { const resultEl = document.getElementById('ip-result'); resultEl.textContent = 'Fetching...'; resultEl.classList.add('show'); fetch('https://api.ipify.org?format=json').then(response => response.json()).then(data => { resultEl.innerHTML = `<div class="text-gray-500 dark:text-gray-400">Your Public IP is</div><div class="text-3xl font-bold my-2 text-blue-600 font-mono">${data.ip}</div>`; }).catch(error => { resultEl.textContent = 'Could not fetch IP.'; console.error('Error fetching IP:', error); }); }); }; return { html, logic }; },
+            getRandomNamePicker: function() { const html = `<div class="space-y-4"><label class="${App.css.label}">Enter names (one per line)</label><textarea id="rnp-names" class="${App.css.input} min-h-[200px]" placeholder="Alice\nBob\nCharlie"></textarea><button id="rnp-pick" class="${App.css.button}">Pick a Winner</button><div id="rnp-result" class="${App.css.resultContainer}"></div></div>`; const logic = () => { document.getElementById('rnp-pick').addEventListener('click', () => { const namesText = document.getElementById('rnp-names').value; const resultEl = document.getElementById('rnp-result'); const names = namesText.split('\n').map(n => n.trim()).filter(n => n); if (names.length > 0) { const winner = names[Math.floor(Math.random() * names.length)]; resultEl.innerHTML = `<div class="text-gray-500 dark:text-gray-400">The winner is...</div><div class="text-4xl font-bold my-3 text-green-600">🎉 ${winner} 🎉</div>`; resultEl.classList.add('show'); } else { resultEl.textContent = 'Please enter some names.'; resultEl.classList.add('show'); } }); }; return { html, logic }; },
+            getUnitConverter: function() { const html = `<div class="space-y-4 max-w-lg mx-auto"><div><label class="${App.css.label}">Conversion Type</label><select id="uc-type" class="${App.css.input}"><option value="length">Length</option><option value="weight">Weight</option><option value="temperature">Temperature</option></select></div><div class="flex items-center space-x-4"><div class="w-1/2"><label class="${App.css.label}">From</label><input type="number" id="uc-input1" class="${App.css.input}" value="1"><select id="uc-unit1" class="${App.css.input} mt-2"></select></div><div class="text-2xl font-bold pt-8 dark:text-slate-200">=</div><div class="w-1/2"><label class="${App.css.label}">To</label><input type="number" id="uc-input2" class="${App.css.inputReadonly}" readonly><select id="uc-unit2" class="${App.css.input} mt-2"></select></div></div></div>`; const logic = () => { const typeSelect = document.getElementById('uc-type'), input1 = document.getElementById('uc-input1'), input2 = document.getElementById('uc-input2'), unit1Select = document.getElementById('uc-unit1'), unit2Select = document.getElementById('uc-unit2'); const units = { length: { units: { m: 'Meter', km: 'Kilometer', mi: 'Mile', ft: 'Foot' }, conversions: { m: 1, km: 1000, mi: 1609.34, ft: 0.3048 } }, weight: { units: { kg: 'Kilogram', g: 'Gram', lb: 'Pound', oz: 'Ounce' }, conversions: { kg: 1, g: 0.001, lb: 0.453592, oz: 0.0283495 } }, temperature: { units: { c: 'Celsius', f: 'Fahrenheit', k: 'Kelvin' } } }; function populateUnits() { const selectedType = typeSelect.value, unitData = units[selectedType].units; unit1Select.innerHTML = ''; unit2Select.innerHTML = ''; for (const key in unitData) { unit1Select.innerHTML += `<option value="${key}">${unitData[key]}</option>`; unit2Select.innerHTML += `<option value="${key}">${unitData[key]}</option>`; } unit2Select.value = Object.keys(unitData)[1] || Object.keys(unitData)[0]; convert(); } function convert() { const type = typeSelect.value, val1 = parseFloat(input1.value), unit1 = unit1Select.value, unit2 = unit2Select.value; if (isNaN(val1)) { input2.value = ''; return; } let result; if (type === 'temperature') { if (unit1 === unit2) result = val1; else if (unit1 === 'c' && unit2 === 'f') result = val1 * 9 / 5 + 32; else if (unit1 === 'f' && unit2 === 'c') result = (val1 - 32) * 5 / 9; else if (unit1 === 'c' && unit2 === 'k') result = val1 + 273.15; else if (unit1 === 'k' && unit2 === 'c') result = val1 - 273.15; else if (unit1 === 'f' && unit2 === 'k') result = (val1 - 32) * 5 / 9 + 273.15; else if (unit1 === 'k' && unit2 === 'f') result = (val1 - 273.15) * 9 / 5 + 32; } else { const valueInBase = val1 * units[type].conversions[unit1]; result = valueInBase / units[type].conversions[unit2]; } input2.value = parseFloat(result.toFixed(4)); } typeSelect.addEventListener('change', populateUnits); input1.addEventListener('input', convert); unit1Select.addEventListener('change', convert); unit2Select.addEventListener('change', convert); populateUnits(); }; return { html, logic }; },
+            getBase64Converter: function() { const html = `<div class="space-y-4 h-full flex flex-col"><label class="${App.css.label}">Input</label><textarea id="b64-input" class="${App.css.input} flex-grow font-mono min-h-[150px]" placeholder="Enter text to encode or Base64 to decode..."></textarea><div class="grid grid-cols-2 gap-4"><button id="b64-encode" class="${App.css.button}">Encode (to Base64)</button><button id="b64-decode" class="${App.css.buttonGray}">Decode (from Base64)</button></div><label class="${App.css.label}">Output</label><textarea id="b64-output" class="${App.css.inputReadonly} flex-grow font-mono min-h-[150px]" readonly></textarea></div>`; const logic = () => { document.getElementById('b64-encode').addEventListener('click', () => { const input = document.getElementById('b64-input').value; const outputEl = document.getElementById('b64-output'); try { outputEl.value = btoa(unescape(encodeURIComponent(input))); } catch (e) { outputEl.value = 'Error: Could not encode input.'; } }); document.getElementById('b64-decode').addEventListener('click', () => { const input = document.getElementById('b64-input').value; const outputEl = document.getElementById('b64-output'); try { outputEl.value = decodeURIComponent(escape(atob(input))); } catch (e) { outputEl.value = 'Error: Invalid Base64 string.'; } }); }; return { html, logic }; },
+            getPomodoroTimer: function() { const html = `<div class="text-center max-w-sm mx-auto"><div class="space-x-2 mb-4"><button id="pomo-mode-pomodoro" class="px-4 py-2 rounded-lg bg-blue-500 text-white transition">Pomodoro</button><button id="pomo-mode-short" class="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 dark:bg-slate-700 dark:hover:bg-slate-600 dark:text-slate-100 transition">Short Break</button><button id="pomo-mode-long" class="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 dark:bg-slate-700 dark:hover:bg-slate-600 dark:text-slate-100 transition">Long Break</button></div><div id="pomo-time" class="text-8xl font-bold my-8 dark:text-white">25:00</div><div class="space-x-4"><button id="pomo-start" class="${App.css.button} inline-block w-auto px-10">Start</button><button id="pomo-reset" class="${App.css.buttonGray} inline-block w-auto px-10">Reset</button></div></div>`; const logic = () => { let interval, timeLeft; const modes = { pomodoro: 1500, short: 300, long: 900 }; let currentMode = 'pomodoro'; const timeDisplay = document.getElementById('pomo-time'), startBtn = document.getElementById('pomo-start'), resetBtn = document.getElementById('pomo-reset'), modeBtns = { pomodoro: document.getElementById('pomo-mode-pomodoro'), short: document.getElementById('pomo-mode-short'), long: document.getElementById('pomo-mode-long') }; function updateDisplay() { const minutes = Math.floor(timeLeft / 60); const seconds = timeLeft % 60; timeDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`; } function resetTimer() { clearInterval(interval); interval = null; timeLeft = modes[currentMode]; updateDisplay(); startBtn.textContent = 'Start'; } function startTimer() { if (interval) { clearInterval(interval); interval = null; startBtn.textContent = 'Start'; } else { startBtn.textContent = 'Pause'; interval = setInterval(() => { timeLeft--; if (timeLeft < 0) { resetTimer(); alert('Time is up!'); return; } updateDisplay(); }, 1000); } } function switchMode(newMode) { currentMode = newMode; Object.keys(modeBtns).forEach(key => { modeBtns[key].classList.remove('bg-blue-500', 'text-white'); modeBtns[key].classList.add('bg-gray-200', 'hover:bg-gray-300', 'dark:bg-slate-700', 'dark:hover:bg-slate-600', 'dark:text-slate-100'); }); modeBtns[newMode].classList.add('bg-blue-500', 'text-white'); modeBtns[newMode].classList.remove('bg-gray-200', 'hover:bg-gray-300', 'dark:bg-slate-700', 'dark:hover:bg-slate-600', 'dark:text-slate-100'); resetTimer(); } startBtn.addEventListener('click', startTimer); resetBtn.addEventListener('click', resetTimer); modeBtns.pomodoro.addEventListener('click', () => switchMode('pomodoro')); modeBtns.short.addEventListener('click', () => switchMode('short')); modeBtns.long.addEventListener('click', () => switchMode('long')); resetTimer(); }; return { html, logic }; },
+            getMortgageCalculator: function() { const html = `<div class="space-y-4 max-w-md mx-auto"><div><label class="${App.css.label}">Loan Amount ($)</label><input type="number" id="mc-amount" class="${App.css.input}" placeholder="e.g., 300000"></div><div><label class="${App.css.label}">Interest Rate (%)</label><input type="number" id="mc-rate" class="${App.css.input}" step="0.01" placeholder="e.g., 5.5"></div><div><label class="${App.css.label}">Loan Term (Years)</label><input type="number" id="mc-term" class="${App.css.input}" placeholder="e.g., 30"></div><button id="mc-calculate" class="${App.css.button}">Calculate</button><div id="mc-result" class="${App.css.resultContainer}"></div></div>`; const logic = () => { document.getElementById('mc-calculate').addEventListener('click', () => { const principal = parseFloat(document.getElementById('mc-amount').value), annualRate = parseFloat(document.getElementById('mc-rate').value), years = parseFloat(document.getElementById('mc-term').value), resultEl = document.getElementById('mc-result'); if (principal > 0 && annualRate > 0 && years > 0) { const monthlyRate = annualRate / 100 / 12; const numberOfPayments = years * 12; const monthlyPayment = principal * (monthlyRate * Math.pow(1 + monthlyRate, numberOfPayments)) / (Math.pow(1 + monthlyRate, numberOfPayments) - 1); const totalPayment = monthlyPayment * numberOfPayments; const totalInterest = totalPayment - principal; resultEl.innerHTML = `<div class="text-gray-500 dark:text-gray-400">Monthly Payment</div><div class="text-3xl font-bold my-2 text-blue-600">$${monthlyPayment.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}</div><div class="grid grid-cols-2 gap-4 text-sm mt-4"><div class="bg-gray-100 p-2 rounded dark:bg-slate-700"><div class="text-gray-500 dark:text-gray-400">Total Payment</div><div class="font-semibold dark:text-white">$${totalPayment.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}</div></div><div class="bg-gray-100 p-2 rounded dark:bg-slate-700"><div class="text-gray-500 dark:text-gray-400">Total Interest</div><div class="font-semibold dark:text-white">$${totalInterest.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}</div></div></div>`; resultEl.classList.add('show'); } else { resultEl.innerHTML = `Please enter valid numbers in all fields.`; resultEl.classList.add('show'); } }); }; return { html, logic }; },
+        }
+      };
+      
+      document.addEventListener('DOMContentLoaded', () => App.init());
     </script>
 </body>
 </html>
